@@ -1,0 +1,225 @@
+---
+lang: en
+---
+
+:::: {.columns}
+
+::: {.column .left-column width="30%"}
+![](images/photo.jpg){width=100%}
+
+### **Contact**  
+KENSAN.VAN@GMAIL.COM  
++33 7 68 14 01 74  
+[LinkedIn](https://www.linkedin.com/in/vanessa-kenniche-sanocka/)  
+
+### **Expertise**  
+<span style="text-align: justify; display:block;">
+Advanced econometrics, causal analysis, machine learning, NLP, geospatial analytics, data engineering, interactive visualization, public policy evaluation, confidential data
+</span>
+
+### **Languages**  
+<span style="text-align: justify; display:block;">
+Python, R, SQL, JavaScript, HTML/CSS, Bash
+</span>
+
+### **Tools**  
+<span style="text-align: justify; display:block;">
+Spark, Airflow, ElasticSearch, PyTorch, TensorFlow, Quarto, Power BI, Shiny, Git/GitLab, Docker, QGIS, CASD
+</span>
+
+### **Languages** 
+Native French  
+Native Polish  
+English C1 (TOEIC)
+
+:::
+
+::: {.column width="10%"}
+<!-- Spacing -->
+:::
+
+::: {.column .main-column width="65%"}
+
+#
+# About {#about}
+<span style="text-align: justify; display:block;">
+**Vanessa Kenniche Sanocka**, Data Science Engineer  
+**Data scientist at the French Court of Audit since 2023**  
+**Graduate of the Engineering Master's Program [(CMI)](https://reseau-figure.fr/les-cursus-master-en-ingenierie) Data Science for Social Sciences, University of Paris Nanterre**  
+
+Specialized in quantitative economics and public policy analysis. Expertise in end-to-end project leadership: econometric modeling, large-scale and sensitive data processing, transforming complex analyses into accessible recommendations for stakeholders. International experience and ability to present to diverse audiences, from magistrates to technical teams. Structured approach focused on reproducibility, knowledge transfer and decision impact.
+</span>
+
+<div style="text-align:center;">
+  <a href="files/CV_Vanessa_KENNICHE_SANOCKA_en.pdf" 
+     class="btn btn-primary btn-sm" 
+     download>
+    Download Vanessa KENNICHE SANOCKA's CV
+  </a>
+</div>
+
+---
+
+# Professional Experience {#experience}
+
+## French Court of Audit | Data Science Engineer | 2023 — Present
+<span style="text-align: justify; display:block; font-size:0.9em; color:gray;">
+Intervention on public policy evaluation projects within financial jurisdictions. Production of decision-oriented analyses in direct collaboration with magistrates and institutional stakeholders. Mastery of confidentiality standards and clear communication in formal contexts.
+</span>
+
+### ▸ Franco-Swiss cross-border geospatial analysis
+**Harmonization of heterogeneous GIS data France-Switzerland** to identify cross-border regulatory discontinuities. Research and exploitation of official databases (IGN, SwissTopo, SITG), coupling of nomenclatures and harmonization of territorial scales. Transformation of complex geospatial analyses into interactive visualizations and public policy recommendations for institutional teams.  
+<span class="tag">Python</span>
+<span class="tag">QGIS</span>
+<span class="tag">GeoPandas</span>
+<span class="tag">PlotLy</span>
+
+### ▸ Urban transport pricing policy evaluation
+**Advanced econometric modeling** on national data (GART, CEREMA) combining panel models, event studies and survey methods. Processing of confidential user databases through stratified sampling, propensity score adjustment, margin calibration and bootstrapping. Enhancement through complementary research (FILOSOFI database) to formulate pricing recommendations with interactive delivery via Shiny.  
+<span class="tag">R</span>
+<span class="tag">Panel Data</span>
+<span class="tag">Event Study</span>
+<span class="tag">Causal Inference</span>
+<span class="tag">Survey Methods</span>
+<span class="tag">Propensity Score</span>
+<span class="tag">Bootstrap</span>
+<span class="tag">Shiny</span>
+<span class="tag">Leaflet</span>
+
+### ▸ NLP and RAG pipeline for document exploration
+**Full-stack integration** for exploration and semantic querying of institutional documents. Complete architecture including NLP preprocessing (tokenization, lemmatization, NER), embedding models (SBERT, Word2Vec), ElasticSearch indexing and Next.js web interface. FastAPI development for real-time queries and migration to new internal archiving system.  
+<span class="tag">Python</span>
+<span class="tag">spaCy</span>
+<span class="tag">SBERT</span>
+<span class="tag">ElasticSearch</span>
+<span class="tag">RAG</span>
+<span class="tag">FastAPI</span>
+<span class="tag">Next.js</span>
+<span class="tag">NLP</span>
+<span class="tag">Embeddings</span>
+
+### ▸ Predictive modeling on national judicial registries (CASD)
+**Machine learning algorithms** on longitudinal data from the National Criminal Record. Survival analysis and risk scoring for criminal trajectories. Intensive processing of identifiers, temporal panel construction and recidivism modeling for public decision support in high-confidentiality secure environment.  
+<span class="tag">R</span>
+<span class="tag">Machine Learning</span>
+<span class="tag">Survival Analysis</span>
+<span class="tag">Panel Data</span>
+<span class="tag">Risk Scoring</span>
+<span class="tag">CASD</span>
+<span class="tag">Longitudinal Data</span>
+
+### ▸ Analysis on tax and employment data (EEC, POTE)
+**Exploitation of INSEE employment surveys** and tax databases via CASD for reform evaluation (pensions, PACTE law). Statistical modeling on coupled administrative data, harmonization of heterogeneous databases and identifier matching. Production of economic indicators and impact evaluation of social policies.  
+<span class="tag">R</span>
+<span class="tag">Statistical Modeling</span>
+<span class="tag">Administrative Data</span>
+<span class="tag">Policy Evaluation</span>
+<span class="tag">Data Linkage</span>
+<span class="tag">CASD</span>
+<span class="tag">Economic Indicators</span>
+
+## Cross-cutting projects and institutional contributions
+
+### ▸ Training module development for data scientists
+**Design of educational tools**: statistical survey module (stratification, weighting, calibration), interactive cartography tutorial (R/Python, Leaflet/Folium), standardized Quarto template for reproducible reports. Internal workshop facilitation and technical documentation for collective skill development.  
+<span class="tag">R</span>
+<span class="tag">Python</span>
+<span class="tag">Quarto</span>
+<span class="tag">Pedagogy</span>
+<span class="tag">Documentation</span>
+
+### ▸ Collaborative platform for data science team
+**Knowledge sharing architecture**: development of an internal platform for resource centralization, peer reviews and training sessions. Implementation of Git best practices, code standards and collaborative validation processes.  
+<span class="tag">GitLab</span>
+<span class="tag">Collaboration</span>
+<span class="tag">Knowledge Management</span>
+
+---
+
+# Academic Experience {#education}
+
+## Engineering Master's Program Data Science for Social Sciences | University of Paris Nanterre | 2020 — 2025 
+<span style="text-align: justify; display:block; font-size:0.9em; color:gray;">
+Selective and intensive program structured around multi-year projects. Reinforced courses in econometrics, data science and public policy analysis. Completion of two research theses under supervision of [Patrice Bertail](https://bertail.perso.math.cnrs.fr/), combining advanced modeling and scientific valorization. Project-based approach with autonomy in identifying data sources and real-world application.
+</span>
+
+### ▸ Banking fraud detection
+**Supervised modeling on imbalanced data**. Application of SMOTE/B-SMOTE techniques, cross-validation and financial risk scoring. Model comparison (Random Forest, XGBoost, SVM) with metric optimization for minority classes.  
+<span class="tag">Python</span>
+<span class="tag">Scikit-learn</span>
+<span class="tag">SMOTE</span>
+<span class="tag">Cross-validation</span>
+<span class="tag">Financial Risk</span>
+
+### ▸ Algorithmic pricing detection — with EconomiX laboratory
+**High-frequency scraping to data lake**, classification and estimation of price adjustments through fixed-effects models. Robustness testing and detection of automated pricing patterns on e-commerce data.  
+<span class="tag">Python</span>
+<span class="tag">Web Scraping</span>
+<span class="tag">Fixed Effects</span>
+<span class="tag">Price Analytics</span>
+<span class="tag">Data Lake</span>
+
+### ▸ Innovation determinants benchmarking (South Asia)
+**Cross-country econometric modeling** (logit/Poisson) on survey data. Robustness testing through Lasso regularization and comparative analysis of innovation factors (India, Bangladesh, Pakistan, Nepal).  
+<span class="tag">R</span>
+<span class="tag">Econometrics</span>
+<span class="tag">Cross-country Analysis</span>
+<span class="tag">Lasso Regularization</span>
+<span class="tag">Innovation Policy</span>
+
+### ▸ Parliamentary voting network analysis
+**Government open data scraping**, Manhattan distance matrix construction and spring layout clustering to identify cross-party coalitions. Interactive visualization of political proximities.  
+<span class="tag">Python</span>
+<span class="tag">NetworkX</span>
+<span class="tag">Graph Theory</span>
+<span class="tag">Political Analysis</span>
+<span class="tag">Dash</span>
+
+### ▸ Demographic Power BI pipeline
+**MySQL star schema data warehouse**, windowing queries (moving averages) and territorial dashboard for housing policy indicators. Complete BI architecture with ETL via MageAI.  
+<span class="tag">SQL</span>
+<span class="tag">MySQL</span>
+<span class="tag">Power BI</span>
+<span class="tag">Data Warehouse</span>
+<span class="tag">ETL</span>
+
+### ▸ PATSTAT patent intelligence
+**Competitive mapping** and sectoral strategic positioning with geospatial visualizations. Patent family analysis, citations and industrial policy recommendations on official database.  
+<span class="tag">Python</span>
+<span class="tag">SQL</span>
+<span class="tag">PATSTAT</span>
+<span class="tag">Patent Analysis</span>
+<span class="tag">Geospatial Viz</span>
+
+### ▸ Reddit & SteamDB Data Lake
+**Collection and analysis pipeline**: massive data scraping, Airflow orchestration, real-time ingestion into data lake. Kafka/Spark architecture with Parquet storage and Grafana monitoring.  
+<span class="tag">Python</span>
+<span class="tag">Airflow</span>
+<span class="tag">Kafka</span>
+<span class="tag">Spark</span>
+<span class="tag">Data Lake</span>
+
+### ▸ IMDB — Shortest path graphs
+**Bipartite graph construction** actors-films, shortest path calculation with NetworkX. Dash interface for interactive queries with temporal constraints and network visualization.  
+<span class="tag">Python</span>
+<span class="tag">NetworkX</span>
+<span class="tag">Graph Algorithms</span>
+<span class="tag">Dash</span>
+<span class="tag">Interactive Viz</span>
+
+---
+
+# Commitments and Contributions {#other}
+
+### ▸ STEM Ambassador — "Girls and Math" Program
+**High school student outreach** to scientific careers as part of the national STEM promotion plan. Intervention at University of Paris Nanterre for deconstruction of gender stereotypes in mathematics and sciences.
+
+### ▸ Open source contributions and training
+**Educational resource development**: Quarto templates, R modules for survey methods, interactive cartography tutorials. Sharing best practices in reproducibility and technical documentation.
+
+### ▸ Interests
+Digital arts, graphic design, 3D modeling, mountain biking, gymnastics, contemporary history, numismatics
+
+:::
+
+::::

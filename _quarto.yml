@@ -1,0 +1,41 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - files/**
+
+website:
+  site-url: https://vanessa-kenniche-sanocka.github.io/
+  navbar:
+    pinned: true
+    title: "<strong>VANESSA KENNICHE SANOCKA</strong> <span style='font-weight:400; color:#aaa;'> — Data Scientist</span>"
+    left:
+      - text: "About"
+        href: "#about"
+      - text: "Professional Experience"
+        href: "#experience"
+      - text: "Academic Experience"
+        href: "#education"
+      - text: "Other"
+        href: "#other"
+    right:
+      - text: "<img src='images/us.svg' alt='US' class='flag-icon'> EN"
+        href: index.en.html
+      - text: "<img src='images/fr.svg' alt='FR' class='flag-icon'> FR"
+        href: index.fr.html
+      - text: "<img src='images/pl.svg' alt='PL' class='flag-icon'> PL"
+        href: index.pl.html
+  page-footer:
+    center: |
+      <span style="font-size:0.9em; color:#777;">
+      Conçu et développé avec Quarto par Vanessa Kenniche Sanocka
+      </span>
+
+format:
+  html:
+    link-external-newwindow: true
+    theme: cosmo
+    css: styles.css
+    smooth-scroll: true
+    include-after-body:
+      - scripts.html  

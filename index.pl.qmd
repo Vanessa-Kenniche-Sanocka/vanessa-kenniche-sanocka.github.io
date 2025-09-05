@@ -1,0 +1,225 @@
+---
+lang: pl
+---
+
+:::: {.columns}
+
+::: {.column .left-column width="30%"}
+![](images/photo.jpg){width=100%}
+
+### **Kontakt**  
+KENSAN.VAN@GMAIL.COM  
++33 7 68 14 01 74  
+[LinkedIn](https://www.linkedin.com/in/vanessa-kenniche-sanocka/)  
+
+### **Specjalizacje**  
+<span style="text-align: justify; display:block;">
+Zaawansowana ekonometria, analiza przyczynowości, uczenie maszynowe, NLP, analityka geospatial, inżynieria danych, wizualizacja interaktywna, ewaluacja polityk publicznych, dane poufne
+</span>
+
+### **Języki programowania**  
+<span style="text-align: justify; display:block;">
+Python, R, SQL, JavaScript, HTML/CSS, Bash
+</span>
+
+### **Narzędzia**  
+<span style="text-align: justify; display:block;">
+Spark, Airflow, ElasticSearch, PyTorch, TensorFlow, Quarto, Power BI, Shiny, Git/GitLab, Docker, QGIS, CASD
+</span>
+
+### **Języki** 
+Francuski natywny  
+Polski natywny  
+Angielski C1 (TOEIC)
+
+:::
+
+::: {.column width="10%"}
+<!-- Odstęp -->
+:::
+
+::: {.column .main-column width="65%"}
+
+#
+# O mnie {#about}
+<span style="text-align: justify; display:block;">
+**Vanessa Kenniche Sanocka**, Inżynier Data Science  
+**Data scientist w Francuskiej Izbie Obrachunkowej od 2023**  
+**Absolwentka Programu Magisterskiego Inżynierskiego [(CMI)](https://reseau-figure.fr/les-cursus-master-en-ingenierie) Data Science for Social Sciences, Uniwersytet Paris Nanterre**  
+
+Specjalizacja w ekonomii ilościowej i analizie polityk publicznych. Doświadczenie w kierowaniu projektami od początku do końca: modelowanie ekonometryczne, przetwarzanie dużych i wrażliwych zbiorów danych, przekształcanie złożonych analiz w dostępne rekomendacje dla interesariuszy. Doświadczenie międzynarodowe i umiejętność prezentacji przed różnorodnymi audytoriami, od sędziów po zespoły techniczne. Ustrukturyzowane podejście zorientowane na reprodukowalność, transfer wiedzy i wpływ na decyzje.
+</span>
+
+<div style="text-align:center;">
+  <a href="files/CV_Vanessa_KENNICHE_SANOCKA_en.pdf" 
+     class="btn btn-primary btn-sm" 
+     download>
+    Pobierz CV Vanessa KENNICHE SANOCKA
+  </a>
+</div>
+
+---
+
+# Doświadczenie zawodowe {#experience}
+
+## Francuska Izba Obrachunkowa | Inżynier Data Science | 2023 — Obecnie
+<span style="text-align: justify; display:block; font-size:0.9em; color:gray;">
+Praca przy projektach ewaluacji polityk publicznych w ramach jurysdykcji finansowych. Produkcja analiz zorientowanych na decyzje we współpracy bezpośredniej z sędziami i interesariuszami instytucjonalnymi. Znajomość standardów poufności i jasna komunikacja w kontekstach formalnych.
+</span>
+
+### ▸ Francusko-szwajcarska analiza geospatial transgraniczna
+**Harmonizacja heterogenicznych danych GIS Francja-Szwajcaria** w celu identyfikacji transgranicznych nieciągłości regulacyjnych. Badania i wykorzystanie oficjalnych baz danych (IGN, SwissTopo, SITG), łączenie nomenklatur i harmonizacja skal terytorialnych. Przekształcanie złożonych analiz geospatial w interaktywne wizualizacje i rekomendacje polityk publicznych dla zespołów instytucjonalnych.  
+<span class="tag">Python</span>
+<span class="tag">QGIS</span>
+<span class="tag">GeoPandas</span>
+<span class="tag">PlotLy</span>
+
+### ▸ Ewaluacja polityk taryfikacji transportu miejskiego
+**Zaawansowane modelowanie ekonometryczne** na danych krajowych (GART, CEREMA) łączące modele panelowe, event studies i metody badawcze. Przetwarzanie poufnych baz danych użytkowników poprzez próbkowanie stratyfikowane, dostosowanie propensity score, kalibrację marż i bootstrapping. Wzbogacenie przez badania uzupełniające (baza FILOSOFI) w celu sformułowania rekomendacji taryfikacyjnych z interaktywną prezentacją poprzez Shiny.  
+<span class="tag">R</span>
+<span class="tag">Panel Data</span>
+<span class="tag">Event Study</span>
+<span class="tag">Causal Inference</span>
+<span class="tag">Survey Methods</span>
+<span class="tag">Propensity Score</span>
+<span class="tag">Bootstrap</span>
+<span class="tag">Shiny</span>
+<span class="tag">Leaflet</span>
+
+### ▸ Pipeline NLP i RAG do eksploracji dokumentów
+**Pełna integracja** do eksploracji i semantycznego przeszukiwania dokumentów instytucjonalnych. Kompletna architektura obejmująca preprocessing NLP (tokenizacja, lematyzacja, NER), modele embeddings (SBERT, Word2Vec), indeksowanie ElasticSearch i interfejs webowy Next.js. Rozwój FastAPI dla zapytań w czasie rzeczywistym i migracja do nowego wewnętrznego systemu archiwizacji.  
+<span class="tag">Python</span>
+<span class="tag">spaCy</span>
+<span class="tag">SBERT</span>
+<span class="tag">ElasticSearch</span>
+<span class="tag">RAG</span>
+<span class="tag">FastAPI</span>
+<span class="tag">Next.js</span>
+<span class="tag">NLP</span>
+<span class="tag">Embeddings</span>
+
+### ▸ Modelowanie predykcyjne na krajowych rejestrach sądowych (CASD)
+**Algorytmy uczenia maszynowego** na danych longitudinalnych z Krajowego Rejestru Karnego. Analiza przeżycia i scoring ryzyka dla trajektorii przestępczych. Intensywne przetwarzanie identyfikatorów, konstrukcja paneli czasowych i modelowanie recydywy do wsparcia decyzji publicznych w środowisku zabezpieczonym wysokiej poufności.  
+<span class="tag">R</span>
+<span class="tag">Machine Learning</span>
+<span class="tag">Survival Analysis</span>
+<span class="tag">Panel Data</span>
+<span class="tag">Risk Scoring</span>
+<span class="tag">CASD</span>
+<span class="tag">Longitudinal Data</span>
+
+### ▸ Analiza danych podatkowych i zatrudnieniowych (EEC, POTE)
+**Wykorzystanie badań zatrudnienia INSEE** i baz podatkowych poprzez CASD do ewaluacji reform (emerytury, ustawa PACTE). Modelowanie statystyczne na sprzężonych danych administracyjnych, harmonizacja heterogenicznych baz danych i dopasowywanie identyfikatorów. Produkcja wskaźników ekonomicznych i ewaluacja wpływu polityk społecznych.  
+<span class="tag">R</span>
+<span class="tag">Statistical Modeling</span>
+<span class="tag">Administrative Data</span>
+<span class="tag">Policy Evaluation</span>
+<span class="tag">Data Linkage</span>
+<span class="tag">CASD</span>
+<span class="tag">Economic Indicators</span>
+
+## Projekty przekrojowe i wkład instytucjonalny
+
+### ▸ Rozwój modułów szkoleniowych dla data scientists
+**Projektowanie narzędzi edukacyjnych**: moduł badań statystycznych (stratyfikacja, ważenie, kalibracja), tutorial kartografii interaktywnej (R/Python, Leaflet/Folium), standardowy szablon Quarto dla raportów reprodukowalnych. Prowadzenie warsztatów wewnętrznych i dokumentacja techniczna dla zbiorowego rozwoju umiejętności.  
+<span class="tag">R</span>
+<span class="tag">Python</span>
+<span class="tag">Quarto</span>
+<span class="tag">Pedagogy</span>
+<span class="tag">Documentation</span>
+
+### ▸ Platforma współpracy dla zespołu data science
+**Architektura dzielenia się wiedzą**: rozwój wewnętrznej platformy do centralizacji zasobów, peer reviews i sesji szkoleniowych. Implementacja dobrych praktyk Git, standardów kodu i procesów walidacji współpracy.  
+<span class="tag">GitLab</span>
+<span class="tag">Collaboration</span>
+<span class="tag">Knowledge Management</span>
+
+---
+
+# Doświadczenie akademickie {#education}
+
+## Program Magisterski Inżynierski Data Science for Social Sciences | Uniwersytet Paris Nanterre | 2020 — 2025 
+<span style="text-align: justify; display:block; font-size:0.9em; color:gray;">
+Selektywny i intensywny program strukturalny wokół projektów wieloletnich. Wzmocnione kursy w ekonometrii, data science i analizie polityk publicznych. Ukończenie dwóch prac badawczych pod nadzorem [Patrice Bertail](https://bertail.perso.math.cnrs.fr/), łączących zaawansowane modelowanie i wartościowanie naukowe. Podejście projektowe z autonomią w identyfikacji źródeł danych i zastosowaniu w rzeczywistości.
+</span>
+
+### ▸ Wykrywanie oszustw bankowych
+**Modelowanie nadzorowane na danych niezrównoważonych**. Zastosowanie technik SMOTE/B-SMOTE, walidacja krzyżowa i scoring ryzyka finansowego. Porównanie modeli (Random Forest, XGBoost, SVM) z optymalizacją metryk dla klas mniejszościowych.  
+<span class="tag">Python</span>
+<span class="tag">Scikit-learn</span>
+<span class="tag">SMOTE</span>
+<span class="tag">Cross-validation</span>
+<span class="tag">Financial Risk</span>
+
+### ▸ Wykrywanie pricing algorithmiczny — z laboratorium EconomiX
+**Scraping wysokiej częstotliwości do data lake**, klasyfikacja i estymacja dostosowań cen poprzez modele fixed-effects. Testy robustności i wykrywanie wzorców automatycznej taryfikacji na danych e-commerce.  
+<span class="tag">Python</span>
+<span class="tag">Web Scraping</span>
+<span class="tag">Fixed Effects</span>
+<span class="tag">Price Analytics</span>
+<span class="tag">Data Lake</span>
+
+### ▸ Benchmarking determinantów innowacji (Azja Południowa)
+**Modelowanie ekonometryczne cross-country** (logit/Poisson) na danych badawczych. Testy robustności poprzez regularyzację Lasso i analiza porównawcza czynników innowacji (Indie, Bangladesz, Pakistan, Nepal).  
+<span class="tag">R</span>
+<span class="tag">Econometrics</span>
+<span class="tag">Cross-country Analysis</span>
+<span class="tag">Lasso Regularization</span>
+<span class="tag">Innovation Policy</span>
+
+### ▸ Analiza sieciowa głosowań parlamentarnych
+**Scraping otwartych danych rządowych**, konstrukcja macierzy odległości Manhattan i clustering spring layout do identyfikacji koalicji transpartyjnych. Interaktywna wizualizacja bliskości politycznych.  
+<span class="tag">Python</span>
+<span class="tag">NetworkX</span>
+<span class="tag">Graph Theory</span>
+<span class="tag">Political Analysis</span>
+<span class="tag">Dash</span>
+
+### ▸ Pipeline demograficzny Power BI
+**Hurtownia danych MySQL schema gwiazdy**, zapytania okienkowe (średnie kroczące) i dashboard terytorialny dla wskaźników polityki mieszkaniowej. Kompletna architektura BI z ETL poprzez MageAI.  
+<span class="tag">SQL</span>
+<span class="tag">MySQL</span>
+<span class="tag">Power BI</span>
+<span class="tag">Data Warehouse</span>
+<span class="tag">ETL</span>
+
+### ▸ Inteligencja patentowa PATSTAT
+**Mapowanie konkurencyjne** i pozycjonowanie strategiczne sektorowe z wizualizacjami geospatial. Analiza rodzin patentów, cytowań i rekomendacje polityki przemysłowej na oficjalnej bazie danych.  
+<span class="tag">Python</span>
+<span class="tag">SQL</span>
+<span class="tag">PATSTAT</span>
+<span class="tag">Patent Analysis</span>
+<span class="tag">Geospatial Viz</span>
+
+### ▸ Data Lake Reddit & SteamDB
+**Pipeline zbierania i analizy**: masowy scraping danych, orkiestracja Airflow, ingestion w czasie rzeczywistym do data lake. Architektura Kafka/Spark z magazynowaniem Parquet i monitoringiem Grafana.  
+<span class="tag">Python</span>
+<span class="tag">Airflow</span>
+<span class="tag">Kafka</span>
+<span class="tag">Spark</span>
+<span class="tag">Data Lake</span>
+
+### ▸ IMDB — Grafy najkrótszej ścieżki
+**Konstrukcja grafu bipartite** aktorzy-filmy, obliczanie najkrótszych ścieżek z NetworkX. Interfejs Dash dla interaktywnych zapytań z ograniczeniami czasowymi i wizualizacją sieci.  
+<span class="tag">Python</span>
+<span class="tag">NetworkX</span>
+<span class="tag">Graph Algorithms</span>
+<span class="tag">Dash</span>
+<span class="tag">Interactive Viz</span>
+
+---
+
+# Zaangażowania i wkład {#other}
+
+### ▸ Ambasador STEM — Program "Dziewczyny i Matematyka"
+**Sensibilizacja uczennic liceum** na kariery naukowe w ramach narodowego planu promocji kierunków STEM. Interwencja na Uniwersytecie Paris Nanterre dla dekonstrukcji stereotypów płciowych w matematyce i naukach.
+
+### ▸ Wkład open source i szkolenia
+**Rozwój zasobów edukacyjnych**: szablony Quarto, moduły R dla metod badawczych, tutoriale kartografii interaktywnej. Dzielenie się najlepszymi praktykami w reprodukowalności i dokumentacji technicznej.
+
+### ▸ Zainteresowania
+Sztuka cyfrowa, projektowanie graficzne, modelowanie 3D, kolarstwo górskie, gimnastyka, historia współczesna, numizmatyka
+
+:::
+
+::::

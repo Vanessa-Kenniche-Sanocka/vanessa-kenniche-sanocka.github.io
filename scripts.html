@@ -1,0 +1,91 @@
+<script>
+  // Traductions pour chaque langue - organisées par position
+  const translations = {
+      'en': ['About', 'Professional Experience', 'Academic Experience', 'Other'],
+      'fr': ['À propos', 'Expérience Professionnelle', 'Expérience Académique', 'Autre'],
+      'pl': ['O mnie', 'Doświadczenie Zawodowe', 'Doświadczenie Akademickie', 'Inne']
+  };
+
+  (function() {
+      const currentLang = document.documentElement.lang ||
+                         (window.location.href.includes('.fr.') ? 'fr' :
+                          window.location.href.includes('.pl.') ? 'pl' : 'en');
+
+      function translateNavbar() {
+          const navLinks = document.querySelectorAll('.navbar-nav:not(.ms-auto) .nav-link');
+          const currentFile = `index.${currentLang}.html`;
+          let navIndex = 0;
+
+          navLinks.forEach(link => {
+              if (navIndex < translations[currentLang].length) {
+                  link.textContent = translations[currentLang][navIndex];
+                  navIndex++;
+              }
+              const originalHref = link.getAttribute('href');
+              if (originalHref && originalHref.includes('#')) {
+                  const anchor = originalHref.split('#')[1];
+                  const newHref = currentFile + '#' + anchor;
+                  link.setAttribute('href', newHref);
+              }
+          });
+      }
+
+      if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', translateNavbar);
+      } else {
+          translateNavbar();
+      }
+
+      const observer = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+              if (mutation.type === 'childList' &&
+                  mutation.target.classList &&
+                  mutation.target.classList.contains('navbar-nav')) {
+                  translateNavbar();
+                  observer.disconnect();
+              }
+          });
+      });
+
+      function startObserve() {
+        observer.observe(document.body, { childList: true, subtree: true });
+      }
+      if (document.body) startObserve();
+      else document.addEventListener('DOMContentLoaded', startObserve);
+  })();
+
+  // Smooth scroll
+  window.addEventListener('load', function() {
+      const anchorLinks = document.querySelectorAll('.navbar-nav .nav-link[href*="#"]');
+      anchorLinks.forEach(link => {
+          link.addEventListener('click', function(e) {
+              const href = this.getAttribute('href');
+              const anchor = href.split('#')[1];
+              if (anchor && document.querySelector('#' + anchor)) {
+                  e.preventDefault();
+                  document.querySelector('#' + anchor).scrollIntoView({
+                      behavior: 'smooth', block: 'start'
+                  });
+                  history.replaceState(null, null, href);
+              }
+          });
+      });
+  });
+
+  // Surbrillance onglet actif
+  window.addEventListener('scroll', function() {
+      const sections = ['about', 'experience', 'education', 'other'];
+      let currentSection = 'about';
+      const scrollY = window.scrollY + 100;
+      sections.forEach(section => {
+          const el = document.querySelector('#' + section);
+          if (el && el.offsetTop <= scrollY) currentSection = section;
+      });
+      const navLinks = document.querySelectorAll('.navbar-nav .nav-link[href*="#"]');
+      navLinks.forEach(link => {
+          const href = link.getAttribute('href');
+          if (href && href.includes('#' + currentSection)) link.classList.add('active');
+          else link.classList.remove('active');
+      });
+  });
+</script>

@@ -1,0 +1,277 @@
+/* =========================
+   Variables CSS
+   ========================= */
+:root {
+    --red-main : #8B0000;
+    --accent: #B22222;
+    --text: #ffffff;
+    --text-dim: #f0f0f0;
+    --sep: #444444;
+    --gap: 2rem;
+    --underline-thickness: 3px;
+    --underline-offset: 6px;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    --navbar-bg: #1a1a1a;
+    --nav-mid-font: 1.1rem;
+}
+
+/* =========================
+   Navbar
+   ========================= */
+.navbar { box-shadow: var(--shadow); position: relative; background: var(--navbar-bg) !important; }
+
+section.level1 { scroll-margin-top: 80px; padding-top: 8px; }
+
+.navbar-brand {
+    font-weight: 700 !important;
+    font-size: 1.3rem !important;
+    color: var(--text) !important;
+    text-decoration: none !important;
+}
+.navbar-brand:hover { color: var(--accent) !important; }
+
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* =========================
+   Navigation principale
+   ========================= */
+.navbar-nav:not(.ms-auto) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin: 0 auto !important;
+    gap: var(--gap);
+}
+.navbar-nav .nav-item { position: relative; display: flex; align-items: center; }
+.navbar-nav:not(.ms-auto) .nav-item + .nav-item::before {
+    content: "";
+    position: absolute;
+    left: calc(-0.5 * var(--gap));
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 1.1em;
+    background: var(--sep);
+    pointer-events: none;
+}
+.navbar .navbar-nav:not(.ms-auto) .nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 0 !important;
+    margin: 0;
+    font-weight: 500;
+    color: var(--text-dim) !important;
+    text-decoration: none;
+    line-height: 1.8;
+    font-size: var(--nav-mid-font) !important;
+    transition: color .2s ease;
+}
+.navbar-nav .nav-link:hover { color: var(--accent) !important; }
+.navbar .navbar-nav .nav-link.active { font-weight: 600 !important; color: var(--accent) !important; }
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: calc(-1 * var(--underline-offset));
+    height: var(--underline-thickness);
+    width: 100%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    background: var(--accent);
+    border-radius: 2px;
+    transition: transform .25s ease;
+}
+.navbar-nav .nav-link.active::after { transform: translateX(-50%) scaleX(1); }
+
+/* =========================
+   Sélecteurs de langue
+   ========================= */
+.navbar-nav.ms-auto { flex: none; margin-left: auto !important; gap: .5rem; }
+.navbar-nav.ms-auto .nav-item + .nav-item::before { content: none !important; }
+.navbar-nav.ms-auto .nav-link {
+    display: inline-flex !important;
+    align-items: center;
+    gap: .35rem;
+    padding: .25rem .5rem !important;
+    font-size: .9rem;
+    line-height: 1;
+    border-radius: 4px;
+    background: none;
+    color: var(--text-dim) !important;
+}
+.navbar-nav.ms-auto .nav-link:hover { background: rgba(255, 255, 255, 0.1) !important; }
+
+/* =========================
+   Responsive générique
+   ========================= */
+@media (max-width: 991px) {
+    .navbar-collapse { text-align: center; }
+    .navbar-nav { margin: 1rem 0; flex-direction: column; gap: .4rem; }
+    .navbar-nav .nav-item + .nav-item::before { content: none !important; }
+    .navbar-nav .nav-link { margin: .1rem 0; }
+    .navbar .navbar-nav:not(.ms-auto) .nav-link { font-size: 1rem !important; line-height: 1.7; }
+}
+
+/* =========================
+   Transitions globales
+   ========================= */
+* { transition: color .2s ease, background-color .2s ease; }
+
+/* =========================
+   Layout des colonnes (desktop)
+   ========================= */
+.left-column { margin-left: -200px !important; max-width: none !important; font-size: 16px; }
+.main-column { margin-right: -200px !important; width: 100% !important; max-width: none !important; font-size: 18px; }
+
+.tag { background: #969696; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.8em; font-weight: 500; margin-right: 2px; display: inline-block; }
+.flag-icon { height: 1em; vertical-align: -0.15em; margin-right: .25em; display: inline-block; }
+
+/* =========================
+   Fond du site
+   ========================= */
+body {
+    background-image: url("images/europe2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* =========================
+   Scrollbar personnalisée
+   ========================= */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #1a1a1a; }
+::-webkit-scrollbar-thumb { background-color: #B22222; border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background-color: #8B0000; }
+* { scrollbar-width: thin; scrollbar-color: #B22222 #1a1a1a; }
+
+.btn { border-radius: 5px; padding: 0.4rem 1rem; font-size: 0.9rem; }
+.btn-primary { background-color: var(--red-main) !important; border-color: var(--red-main) !important; }
+.btn-primary:hover { filter: brightness(0.9); }
+
+h1, h2, h3, h4, h5, h6 { margin-top: 0.5rem; margin-bottom: 0.3rem; }
+hr { margin-top: 2rem; margin-bottom: 1.2rem; }
+
+a { color: #8B0000; text-decoration: underline; text-decoration-color: #8B0000; }
+a:hover { color: #B22222; text-decoration-color: #B22222; }
+
+/* =====================================================
+   Règles orientation-first
+   - Landscape (écran d'ordi) : aucun zoom, layout conservé
+   - Portrait (mobile)        : typographie + padding + fusion colonnes
+   ===================================================== */
+
+/* Landscape: pas de zoom ni compaction, on laisse ton layout tel quel */
+@media (orientation: landscape) {
+  html, body { font-size: 16px; }
+  body { background-attachment: fixed; }
+}
+
+/* Portrait = mobile/tablette tenue verticalement */
+/* Portrait (mobile) : texte + grand, colonnes centrées, padding latéral, photo un peu + grande */
+@media (orientation: portrait) and (max-width: 991px) {
+  /* Navbar : cacher la nav centrale, garder les langues côte à côte et centrées */
+  .navbar-nav:not(.ms-auto) { display: none !important; }
+  .navbar-nav.ms-auto {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: .6rem !important;
+    margin: .4rem auto !important;
+  }
+
+  /* Colonnes empilées ET centrées, avec padding latéral pour éviter l’effet collé aux bords */
+  .columns, .page-columns {
+    display: block !important;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .left-column, .main-column, .column {
+    width: 100% !important;
+    max-width: 720px !important;         /* centrer une largeur confortable */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 0 !important;
+    font-size: 1.1rem;                  /* texte un peu plus gros en mobile */
+  }
+  .left-column + .main-column { margin-top: 1rem !important; }
+
+  /* Photo un peu plus grande et centrée */
+  .left-column img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto .75rem;
+    border-radius: 6px;
+  }
+
+  /* Fond FIXE en mobile comme tu veux */
+  body {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Sécurité globale : si la fenêtre est compacte (≤1200px), jamais de coupe ni de débordement */
+@media (max-width: 1200px) {
+  /* Supprime les marges négatives responsables de la coupe */
+  .left-column, .main-column {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Ajoute des gouttières pour les bords écran et évite le scroll horizontal */
+  .columns, .page-columns {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  html, body { overflow-x: hidden; }
+}
+
+/* Tablettes en paysage : empiler aussi pour éviter tout écrasement/coupe */
+@media (orientation: landscape) and (min-width: 768px) and (max-width: 1199px) {
+  .columns, .page-columns { display: block !important; }
+  .left-column, .main-column, .column {
+    width: 100% !important;
+    max-width: 980px !important;          /* lisible en paysage sans couper */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: 1.02rem;                   /* léger boost de lisibilité */
+  }
+  .left-column + .main-column { margin-top: 1rem !important; }
+
+  /* Photo un peu réduite mais propre */
+  .left-column img { max-width: 190px; height: auto; display: block; margin: 0 auto .75rem; }
+}
+
+
+/* Très petit téléphone: encore un peu plus grand et plus de padding */
+@media (orientation: portrait) and (max-width: 380px) {
+  .left-column, .main-column, .column { font-size: 1.12rem; }
+  .columns, .page-columns { padding-left: 14px; padding-right: 14px; }
+  .left-column img { max-width: 160px; }
+}
+
+/* Corps justifié (hors titres et tags) */
+.main-column p,
+.left-column p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Bouton "Télécharger le CV" : centré sans pleine largeur */
+.main-column a.btn,
+.main-column button.btn {
+  display: block;          /* Changé de inline-block à block */
+  width: fit-content;      /* Garde la largeur naturelle */
+  margin: 1rem auto;       /* Centre horizontalement */
+  text-align: center;
+}
