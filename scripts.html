@@ -132,7 +132,8 @@
       }
   })();
 
-  // Recherche des compétences dans la section Overview
+  // Recherche des compétences dans la section Overview.
+  // Match contre : texte du chip + data-aliases (FR/PL/raccourcis) + titre de la catégorie.
   (function () {
       function norm(s) {
           return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -142,14 +143,21 @@
           if (!input) return;
           const overview = input.closest('.overview') || document;
           const chips = Array.from(overview.querySelectorAll('.skill-chip'));
-          // Chaque catégorie = section.level2 (Pandoc wrap via section-divs)
           const categories = Array.from(overview.querySelectorAll('section.level2'));
+
+          // Index : pour chaque chip, on agrège son texte, ses alias et le titre de catégorie
+          chips.forEach(chip => {
+              const own = chip.textContent;
+              const aliases = chip.dataset.aliases || '';
+              const cat = chip.closest('section.level2');
+              const catTitle = cat ? (cat.querySelector('h2')?.textContent || '') : '';
+              chip._search = norm([own, aliases, catTitle].join(' '));
+          });
 
           function filter() {
               const q = norm(input.value.trim());
               chips.forEach(chip => {
-                  const match = !q || norm(chip.textContent).includes(q);
-                  chip.classList.toggle('is-hidden', !match);
+                  chip.classList.toggle('is-hidden', !!q && !chip._search.includes(q));
               });
               categories.forEach(cat => {
                   const anyVisible = Array.from(cat.querySelectorAll('.skill-chip'))
