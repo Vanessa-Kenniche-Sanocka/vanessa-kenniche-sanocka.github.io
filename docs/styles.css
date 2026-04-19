@@ -1,19 +1,84 @@
 /* =========================
-   Variables CSS
+   Variables CSS — tokens du design system
    ========================= */
 :root {
-    --red-main : #8B0000;
-    --accent: #B22222;
+    /* ---- Couleurs marque ---- */
+    --red-main: #8B0000;
+    --red-bright: #B22222;
+    --accent: var(--red-bright);
+
+    /* ---- Couleurs texte ---- */
     --text: #ffffff;
     --text-dim: #f0f0f0;
+    --text-muted: gray;
+
+    /* ---- Chrome / séparateurs ---- */
     --sep: #444444;
-    --gap: 2rem;
+    --navbar-bg: #1a1a1a;
+
+    /* ---- Fond de page ---- */
+    --bg-image: url("images/europe2.jpg");
+
+    /* ---- Tags ---- */
+    --tag-bg: #969696;
+    --tag-text: #ffffff;
+
+    /* ---- Scrollbar ---- */
+    --scrollbar-track: var(--navbar-bg);
+    --scrollbar-thumb: var(--red-bright);
+    --scrollbar-thumb-hover: var(--red-main);
+
+    /* ---- Espacement ---- */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --gap: var(--space-xl);
+
+    /* ---- Radius ---- */
+    --radius-sm: 4px;
+    --radius-md: 5px;
+    --radius-pill: 999px;
+
+    /* ---- Ombres ---- */
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+
+    /* ---- Transitions ---- */
+    --duration-fast: .2s;
+    --duration: .25s;
+    --ease: ease;
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+    /* ---- Typographie ---- */
+    --nav-mid-font: 1.1rem;
+
+    /* ---- Décoratifs ---- */
     --underline-thickness: 3px;
     --underline-offset: 6px;
-    --shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    --navbar-bg: #1a1a1a;
-    --nav-mid-font: 1.1rem;
 }
+
+/* =========================
+   Thème sombre — overrides de tokens
+   ========================= */
+[data-theme="dark"] {
+    --bg-image: url("images/europe2_dark.jpg");
+    --red-main: #B22222;
+    --red-bright: #E74C3C;
+    --accent: var(--red-bright);
+    --text-muted: #8a8d98;
+    --tag-bg: #4a4d57;
+    --scrollbar-track: #0f1117;
+    color-scheme: dark;
+}
+[data-theme="dark"] body,
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 { color: #f2f3f5; }
 
 /* =========================
    Navbar
@@ -69,7 +134,7 @@ section.level1 { scroll-margin-top: 80px; padding-top: 8px; }
     text-decoration: none;
     line-height: 1.8;
     font-size: var(--nav-mid-font) !important;
-    transition: color .2s ease;
+    transition: color var(--duration-fast) var(--ease);
 }
 .navbar-nav .nav-link:hover { color: var(--accent) !important; }
 .navbar .navbar-nav .nav-link.active { font-weight: 600 !important; color: var(--accent) !important; }
@@ -84,34 +149,50 @@ section.level1 { scroll-margin-top: 80px; padding-top: 8px; }
     transform-origin: center;
     background: var(--accent);
     border-radius: 2px;
-    transition: transform .25s ease;
+    transition: transform var(--duration) var(--ease);
 }
 .navbar-nav .nav-link.active::after { transform: translateX(-50%) scaleX(1); }
 
 /* =========================
    Sélecteurs de langue
    ========================= */
-.navbar-nav.ms-auto { flex: none; margin-left: auto !important; gap: .5rem; }
+.navbar-nav.ms-auto { flex: none; margin-left: auto !important; gap: var(--space-sm); }
 .navbar-nav.ms-auto .nav-item + .nav-item::before { content: none !important; }
 .navbar-nav.ms-auto .nav-link {
     display: inline-flex !important;
     align-items: center;
     gap: .35rem;
-    padding: .25rem .5rem !important;
+    padding: var(--space-xs) var(--space-sm) !important;
     font-size: .9rem;
     line-height: 1;
-    border-radius: 4px;
+    border-radius: var(--radius-sm);
     background: none;
     color: var(--text-dim) !important;
 }
 .navbar-nav.ms-auto .nav-link:hover { background: rgba(255, 255, 255, 0.1) !important; }
+
+/* Bouton toggle thème (injecté dans .navbar-nav.ms-auto via scripts.html) */
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-size: 1rem;
+    line-height: 1;
+    padding: var(--space-xs) var(--space-sm);
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+}
+.theme-toggle:hover { background: rgba(255, 255, 255, 0.1); color: var(--accent); }
 
 /* =========================
    Responsive générique
    ========================= */
 @media (max-width: 991px) {
     .navbar-collapse { text-align: center; }
-    .navbar-nav { margin: 1rem 0; flex-direction: column; gap: .4rem; }
+    .navbar-nav { margin: var(--space-md) 0; flex-direction: column; gap: .4rem; }
     .navbar-nav .nav-item + .nav-item::before { content: none !important; }
     .navbar-nav .nav-link { margin: .1rem 0; }
     .navbar .navbar-nav:not(.ms-auto) .nav-link { font-size: 1rem !important; line-height: 1.7; }
@@ -120,22 +201,42 @@ section.level1 { scroll-margin-top: 80px; padding-top: 8px; }
 /* =========================
    Transitions globales
    ========================= */
-* { transition: color .2s ease, background-color .2s ease; }
+* { transition: color var(--duration-fast) var(--ease), background-color var(--duration-fast) var(--ease); }
 
 /* =========================
-   Layout des colonnes (desktop)
+   Layout colonnes principales (desktop) — CSS Grid
+   Scope sur .columns:not(.page-columns) pour ne pas entrer en collision
+   avec le wrapper .page-columns de Quarto.
    ========================= */
-.left-column { margin-left: -200px !important; max-width: none !important; font-size: 16px; }
-.main-column { margin-right: -200px !important; width: 100% !important; max-width: none !important; font-size: 18px; }
+.columns:not(.page-columns) {
+    display: grid;
+    grid-template-columns: minmax(220px, 260px) minmax(0, 1fr);
+    gap: var(--space-xl);
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Neutraliser les widths inline injectés par Pandoc (width="30%"/"70%") */
+.columns:not(.page-columns) > .column {
+    width: auto !important;
+    max-width: none !important;
+}
+.left-column { font-size: 16px; }
+.main-column { font-size: 18px; min-width: 0; }
 
-.tag { background: #969696; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.8em; font-weight: 500; margin-right: 2px; display: inline-block; }
+.tag { background: var(--tag-bg); color: var(--tag-text); padding: 2px 6px; border-radius: var(--radius-sm); font-size: 0.8em; font-weight: 500; margin-right: 2px; display: inline-block; }
 .flag-icon { height: 1em; vertical-align: -0.15em; margin-right: .25em; display: inline-block; }
+
+/* =========================
+   Contexte de rôle (intro sous titres de section)
+   ========================= */
+.role-context { font-size: 0.9em; color: var(--text-muted); }
 
 /* =========================
    Fond du site
    ========================= */
 body {
-    background-image: url("images/europe2.jpg");
+    background-image: var(--bg-image);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -146,20 +247,20 @@ body {
    Scrollbar personnalisée
    ========================= */
 ::-webkit-scrollbar { width: 8px; height: 8px; }
-::-webkit-scrollbar-track { background: #1a1a1a; }
-::-webkit-scrollbar-thumb { background-color: #B22222; border-radius: 6px; }
-::-webkit-scrollbar-thumb:hover { background-color: #8B0000; }
-* { scrollbar-width: thin; scrollbar-color: #B22222 #1a1a1a; }
+::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+::-webkit-scrollbar-thumb { background-color: var(--scrollbar-thumb); border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background-color: var(--scrollbar-thumb-hover); }
+* { scrollbar-width: thin; scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track); }
 
-.btn { border-radius: 5px; padding: 0.4rem 1rem; font-size: 0.9rem; }
+.btn { border-radius: var(--radius-md); padding: 0.4rem var(--space-md); font-size: 0.9rem; }
 .btn-primary { background-color: var(--red-main) !important; border-color: var(--red-main) !important; }
 .btn-primary:hover { filter: brightness(0.9); }
 
-h1, h2, h3, h4, h5, h6 { margin-top: 0.5rem; margin-bottom: 0.3rem; }
-hr { margin-top: 2rem; margin-bottom: 1.2rem; }
+h1, h2, h3, h4, h5, h6 { margin-top: var(--space-sm); margin-bottom: 0.3rem; }
+hr { margin-top: var(--space-xl); margin-bottom: 1.2rem; }
 
-a { color: #8B0000; text-decoration: underline; text-decoration-color: #8B0000; }
-a:hover { color: #B22222; text-decoration-color: #B22222; }
+a { color: var(--red-main); text-decoration: underline; text-decoration-color: var(--red-main); }
+a:hover { color: var(--red-bright); text-decoration-color: var(--red-bright); }
 
 /* =====================================================
    Règles orientation-first
@@ -187,7 +288,7 @@ a:hover { color: #B22222; text-decoration-color: #B22222; }
     margin: .4rem auto !important;
   }
 
-  /* Colonnes empilées ET centrées, avec padding latéral pour éviter l’effet collé aux bords */
+  /* Colonnes empilées ET centrées, avec padding latéral pour éviter l'effet collé aux bords */
   .columns, .page-columns {
     display: block !important;
     padding-left: 16px;
@@ -201,7 +302,7 @@ a:hover { color: #B22222; text-decoration-color: #B22222; }
     margin-top: 0 !important;
     font-size: 1.1rem;                  /* texte un peu plus gros en mobile */
   }
-  .left-column + .main-column { margin-top: 1rem !important; }
+  .left-column + .main-column { margin-top: var(--space-md) !important; }
 
   /* Photo un peu plus grande et centrée */
   .left-column img {
@@ -220,15 +321,8 @@ a:hover { color: #B22222; text-decoration-color: #B22222; }
   }
 }
 
-/* Sécurité globale : si la fenêtre est compacte (≤1200px), jamais de coupe ni de débordement */
+/* Sécurité globale : gouttières et pas de scroll horizontal sur les fenêtres compactes */
 @media (max-width: 1200px) {
-  /* Supprime les marges négatives responsables de la coupe */
-  .left-column, .main-column {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-
-  /* Ajoute des gouttières pour les bords écran et évite le scroll horizontal */
   .columns, .page-columns {
     padding-left: 16px;
     padding-right: 16px;
@@ -246,7 +340,7 @@ a:hover { color: #B22222; text-decoration-color: #B22222; }
     margin-right: auto !important;
     font-size: 1.02rem;                   /* léger boost de lisibilité */
   }
-  .left-column + .main-column { margin-top: 1rem !important; }
+  .left-column + .main-column { margin-top: var(--space-md) !important; }
 
   /* Photo un peu réduite mais propre */
   .left-column img { max-width: 190px; height: auto; display: block; margin: 0 auto .75rem; }
@@ -272,6 +366,6 @@ a:hover { color: #B22222; text-decoration-color: #B22222; }
 .main-column button.btn {
   display: block;          /* Changé de inline-block à block */
   width: fit-content;      /* Garde la largeur naturelle */
-  margin: 1rem auto;       /* Centre horizontalement */
+  margin: var(--space-md) auto;
   text-align: center;
 }

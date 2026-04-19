@@ -1,5 +1,6 @@
 ---
 lang: fr
+title: "Vanessa Kenniche Sanocka — Data Scientist"
 ---
 
 :::: {.columns}
@@ -12,20 +13,17 @@ KENSAN.VAN@GMAIL.COM
 +33 7 68 14 01 74  
 [LinkedIn](https://www.linkedin.com/in/vanessa-kenniche-sanocka/)  
 
-### **Expertises**  
-<span style="text-align: justify; display:block;">
+### **Expertises**
+
 Économétrie avancée, analyse causale, machine learning, NLP, géospatial analytics, data engineering, visualisation interactive, évaluation de politiques publiques, données confidentielles
-</span>
 
-### **Langages**  
-<span style="text-align: justify; display:block;">
+### **Langages**
+
 Python, R, SQL, JavaScript, HTML/CSS, Bash
-</span>
 
-### **Outils**  
-<span style="text-align: justify; display:block;">
+### **Outils**
+
 Spark, Airflow, ElasticSearch, PyTorch, TensorFlow, Quarto, Power BI, Shiny, Git/GitLab, Docker, QGIS, CASD
-</span>
 
 ### **Langues** 
 Français natif  
@@ -34,38 +32,25 @@ Anglais C1 (TOEIC)
 
 :::
 
-::: {.column width="10%"}
-<!-- Espacement -->
-:::
+::: {.column .main-column width="70%"}
 
-::: {.column .main-column width="65%"}
-
-#
 # À propos {#about}
-<span style="text-align: justify; display:block;">
-**Vanessa Kenniche Sanocka**, Data Science Engineer  
-**Data scientist à la Cour des comptes depuis 2023**  
-**Diplômée du Cursus Master Ingénierie [(CMI)](https://reseau-figure.fr/les-cursus-master-en-ingenierie) Data Science for Social Sciences, Université Paris Nanterre**  
+
+**Vanessa Kenniche Sanocka**, Data Science Engineer\
+**Data scientist à la Cour des comptes depuis 2023**\
+**Diplômée du Cursus Master Ingénierie [(CMI)](https://reseau-figure.fr/les-cursus-master-en-ingenierie) Data Science for Social Sciences, Université Paris Nanterre**
 
 Spécialisée en économie quantitative et analyse de politiques publiques. Expertise en conduite de projets de bout en bout : modélisation économétrique, traitement de données volumineuses et sensibles, transformation d'analyses complexes en recommandations accessibles aux parties prenantes. Expérience internationale et capacité à présenter devant des publics variés, de magistrats aux équipes techniques. Approche structurée orientée reproductibilité, transmission et impact décisionnel.
-</span>
 
-<div style="text-align:center;">
-  <a href="files/CV_Vanessa_KENNICHE_SANOCKA_fr.pdf" 
-     class="btn btn-primary btn-sm" 
-     download>
-    Télécharger le CV de Vanessa KENNICHE SANOCKA
-  </a>
-</div>
-
----
+<a href="files/CV_Vanessa_KENNICHE_SANOCKA_fr.pdf" class="btn btn-primary btn-sm" download>Télécharger le CV de Vanessa KENNICHE SANOCKA</a>
 
 # Expérience Professionnelle {#experience}
 
 ## Cour des comptes | Data Science Engineer | 2023 — Aujourd'hui
-<span style="text-align: justify; display:block; font-size:0.9em; color:gray;">
+
+::: {.role-context}
 Intervention sur des projets d'évaluation de politiques publiques au sein de juridictions financières. Production d'analyses orientées décision en collaboration directe avec magistrats et parties prenantes institutionnelles. Maîtrise des standards de confidentialité et restitution claire dans des contextes formels.
-</span>
+:::
 
 ### ▸ Analyse géospatiale transfrontalière franco-suisse
 **Harmonisation de données SIG hétérogènes France-Suisse** pour identifier les discontinuités réglementaires transfrontalières. Recherche et exploitation de bases officielles (IGN, SwissTopo, SITG), couplage de nomenclatures et harmonisation d'échelles territoriales. Transformation d'analyses géospatiales complexes en visualisations interactives et recommandations de politique publique pour équipes institutionnelles.  
@@ -134,14 +119,13 @@ Intervention sur des projets d'évaluation de politiques publiques au sein de ju
 <span class="tag">Collaboration</span>
 <span class="tag">Knowledge Management</span>
 
----
-
 # Expérience Académique {#education}
 
-## Cursus Master Ingénierie Data Science for Social Sciences | Université Paris Nanterre | 2020 — 2025 
-<span style="text-align: justify; display:block; font-size:0.9em; color:gray;">
+## Cursus Master Ingénierie Data Science for Social Sciences | Université Paris Nanterre | 2020 — 2025
+
+::: {.role-context}
 Formation sélective et intensive structurée autour de projets pluriannuels. Enseignements renforcés en économétrie, data science et analyse de politiques publiques. Réalisation de deux mémoires de recherche sous encadrement de [Patrice Bertail](https://bertail.perso.math.cnrs.fr/), combinant modélisation avancée et valorisation scientifique. Approche projet avec autonomie dans l'identification de sources de données et mise en situation réelle.
-</span>
+:::
 
 ### ▸ Détection de fraude bancaire
 **Modélisation supervisée sur données déséquilibrées**. Application de techniques SMOTE/B-SMOTE, validation croisée et scoring de risque financier. Comparaison de modèles (Random Forest, XGBoost, SVM) avec optimisation des métriques pour classes minoritaires.  
@@ -206,8 +190,6 @@ Formation sélective et intensive structurée autour de projets pluriannuels. En
 <span class="tag">Graph Algorithms</span>
 <span class="tag">Dash</span>
 <span class="tag">Interactive Viz</span>
-
----
 
 # Engagements et Contributions {#other}
 

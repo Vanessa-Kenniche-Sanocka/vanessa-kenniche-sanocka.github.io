@@ -1,5 +1,6 @@
 ---
 lang: pl
+title: "Vanessa Kenniche Sanocka — Data Scientist"
 ---
 
 :::: {.columns}
@@ -12,20 +13,17 @@ KENSAN.VAN@GMAIL.COM
 +33 7 68 14 01 74  
 [LinkedIn](https://www.linkedin.com/in/vanessa-kenniche-sanocka/)  
 
-### **Specjalizacje**  
-<span style="text-align: justify; display:block;">
+### **Specjalizacje**
+
 Zaawansowana ekonometria, analiza przyczynowości, uczenie maszynowe, NLP, analityka geospatial, inżynieria danych, wizualizacja interaktywna, ewaluacja polityk publicznych, dane poufne
-</span>
 
-### **Języki programowania**  
-<span style="text-align: justify; display:block;">
+### **Języki programowania**
+
 Python, R, SQL, JavaScript, HTML/CSS, Bash
-</span>
 
-### **Narzędzia**  
-<span style="text-align: justify; display:block;">
+### **Narzędzia**
+
 Spark, Airflow, ElasticSearch, PyTorch, TensorFlow, Quarto, Power BI, Shiny, Git/GitLab, Docker, QGIS, CASD
-</span>
 
 ### **Języki** 
 Francuski natywny  
@@ -34,38 +32,25 @@ Angielski C1 (TOEIC)
 
 :::
 
-::: {.column width="10%"}
-<!-- Odstęp -->
-:::
+::: {.column .main-column width="70%"}
 
-::: {.column .main-column width="65%"}
-
-#
 # O mnie {#about}
-<span style="text-align: justify; display:block;">
-**Vanessa Kenniche Sanocka**, Inżynier Data Science  
-**Data scientist w Francuskiej Izbie Obrachunkowej od 2023**  
-**Absolwentka Programu Magisterskiego Inżynierskiego [(CMI)](https://reseau-figure.fr/les-cursus-master-en-ingenierie) Data Science for Social Sciences, Uniwersytet Paris Nanterre**  
+
+**Vanessa Kenniche Sanocka**, Inżynier Data Science\
+**Data scientist w Francuskiej Izbie Obrachunkowej od 2023**\
+**Absolwentka Programu Magisterskiego Inżynierskiego [(CMI)](https://reseau-figure.fr/les-cursus-master-en-ingenierie) Data Science for Social Sciences, Uniwersytet Paris Nanterre**
 
 Specjalizacja w ekonomii ilościowej i analizie polityk publicznych. Doświadczenie w kierowaniu projektami od początku do końca: modelowanie ekonometryczne, przetwarzanie dużych i wrażliwych zbiorów danych, przekształcanie złożonych analiz w dostępne rekomendacje dla interesariuszy. Doświadczenie międzynarodowe i umiejętność prezentacji przed różnorodnymi audytoriami, od sędziów po zespoły techniczne. Ustrukturyzowane podejście zorientowane na reprodukowalność, transfer wiedzy i wpływ na decyzje.
-</span>
 
-<div style="text-align:center;">
-  <a href="files/CV_Vanessa_KENNICHE_SANOCKA_en.pdf" 
-     class="btn btn-primary btn-sm" 
-     download>
-    Pobierz CV Vanessa KENNICHE SANOCKA
-  </a>
-</div>
-
----
+<a href="files/CV_Vanessa_KENNICHE_SANOCKA_en.pdf" class="btn btn-primary btn-sm" download>Pobierz CV Vanessa KENNICHE SANOCKA</a>
 
 # Doświadczenie zawodowe {#experience}
 
 ## Francuska Izba Obrachunkowa | Inżynier Data Science | 2023 — Obecnie
-<span style="text-align: justify; display:block; font-size:0.9em; color:gray;">
+
+::: {.role-context}
 Praca przy projektach ewaluacji polityk publicznych w ramach jurysdykcji finansowych. Produkcja analiz zorientowanych na decyzje we współpracy bezpośredniej z sędziami i interesariuszami instytucjonalnymi. Znajomość standardów poufności i jasna komunikacja w kontekstach formalnych.
-</span>
+:::
 
 ### ▸ Francusko-szwajcarska analiza geospatial transgraniczna
 **Harmonizacja heterogenicznych danych GIS Francja-Szwajcaria** w celu identyfikacji transgranicznych nieciągłości regulacyjnych. Badania i wykorzystanie oficjalnych baz danych (IGN, SwissTopo, SITG), łączenie nomenklatur i harmonizacja skal terytorialnych. Przekształcanie złożonych analiz geospatial w interaktywne wizualizacje i rekomendacje polityk publicznych dla zespołów instytucjonalnych.  
@@ -134,14 +119,13 @@ Praca przy projektach ewaluacji polityk publicznych w ramach jurysdykcji finanso
 <span class="tag">Collaboration</span>
 <span class="tag">Knowledge Management</span>
 
----
-
 # Doświadczenie akademickie {#education}
 
-## Program Magisterski Inżynierski Data Science for Social Sciences | Uniwersytet Paris Nanterre | 2020 — 2025 
-<span style="text-align: justify; display:block; font-size:0.9em; color:gray;">
+## Program Magisterski Inżynierski Data Science for Social Sciences | Uniwersytet Paris Nanterre | 2020 — 2025
+
+::: {.role-context}
 Selektywny i intensywny program strukturalny wokół projektów wieloletnich. Wzmocnione kursy w ekonometrii, data science i analizie polityk publicznych. Ukończenie dwóch prac badawczych pod nadzorem [Patrice Bertail](https://bertail.perso.math.cnrs.fr/), łączących zaawansowane modelowanie i wartościowanie naukowe. Podejście projektowe z autonomią w identyfikacji źródeł danych i zastosowaniu w rzeczywistości.
-</span>
+:::
 
 ### ▸ Wykrywanie oszustw bankowych
 **Modelowanie nadzorowane na danych niezrównoważonych**. Zastosowanie technik SMOTE/B-SMOTE, walidacja krzyżowa i scoring ryzyka finansowego. Porównanie modeli (Random Forest, XGBoost, SVM) z optymalizacją metryk dla klas mniejszościowych.  
@@ -206,8 +190,6 @@ Selektywny i intensywny program strukturalny wokół projektów wieloletnich. Wz
 <span class="tag">Graph Algorithms</span>
 <span class="tag">Dash</span>
 <span class="tag">Interactive Viz</span>
-
----
 
 # Zaangażowania i wkład {#other}
 

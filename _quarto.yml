@@ -37,5 +37,9 @@ format:
     theme: cosmo
     css: styles.css
     smooth-scroll: true
+    page-layout: full
+    title-block-style: none
+    include-in-header:
+      - theme-init.html
     include-after-body:
       - scripts.html  

@@ -1,5 +1,6 @@
 ---
 lang: en
+title: "Vanessa Kenniche Sanocka — Data Scientist"
 ---
 
 :::: {.columns}
@@ -12,20 +13,17 @@ KENSAN.VAN@GMAIL.COM
 +33 7 68 14 01 74  
 [LinkedIn](https://www.linkedin.com/in/vanessa-kenniche-sanocka/)  
 
-### **Expertise**  
-<span style="text-align: justify; display:block;">
+### **Expertise**
+
 Advanced econometrics, causal analysis, machine learning, NLP, geospatial analytics, data engineering, interactive visualization, public policy evaluation, confidential data
-</span>
 
-### **Languages**  
-<span style="text-align: justify; display:block;">
+### **Languages**
+
 Python, R, SQL, JavaScript, HTML/CSS, Bash
-</span>
 
-### **Tools**  
-<span style="text-align: justify; display:block;">
+### **Tools**
+
 Spark, Airflow, ElasticSearch, PyTorch, TensorFlow, Quarto, Power BI, Shiny, Git/GitLab, Docker, QGIS, CASD
-</span>
 
 ### **Languages** 
 Native French  
@@ -34,38 +32,25 @@ English C1 (TOEIC)
 
 :::
 
-::: {.column width="10%"}
-<!-- Spacing -->
-:::
+::: {.column .main-column width="70%"}
 
-::: {.column .main-column width="65%"}
-
-#
 # About {#about}
-<span style="text-align: justify; display:block;">
-**Vanessa Kenniche Sanocka**, Data Science Engineer  
-**Data scientist at the French Court of Audit since 2023**  
-**Graduate of the Engineering Master's Program [(CMI)](https://reseau-figure.fr/les-cursus-master-en-ingenierie) Data Science for Social Sciences, University of Paris Nanterre**  
+
+**Vanessa Kenniche Sanocka**, Data Science Engineer\
+**Data scientist at the French Court of Audit since 2023**\
+**Graduate of the Engineering Master's Program [(CMI)](https://reseau-figure.fr/les-cursus-master-en-ingenierie) Data Science for Social Sciences, University of Paris Nanterre**
 
 Specialized in quantitative economics and public policy analysis. Expertise in end-to-end project leadership: econometric modeling, large-scale and sensitive data processing, transforming complex analyses into accessible recommendations for stakeholders. International experience and ability to present to diverse audiences, from magistrates to technical teams. Structured approach focused on reproducibility, knowledge transfer and decision impact.
-</span>
 
-<div style="text-align:center;">
-  <a href="files/CV_Vanessa_KENNICHE_SANOCKA_en.pdf" 
-     class="btn btn-primary btn-sm" 
-     download>
-    Download Vanessa KENNICHE SANOCKA's CV
-  </a>
-</div>
-
----
+<a href="files/CV_Vanessa_KENNICHE_SANOCKA_en.pdf" class="btn btn-primary btn-sm" download>Download Vanessa KENNICHE SANOCKA's CV</a>
 
 # Professional Experience {#experience}
 
 ## French Court of Audit | Data Science Engineer | 2023 — Present
-<span style="text-align: justify; display:block; font-size:0.9em; color:gray;">
+
+::: {.role-context}
 Intervention on public policy evaluation projects within financial jurisdictions. Production of decision-oriented analyses in direct collaboration with magistrates and institutional stakeholders. Mastery of confidentiality standards and clear communication in formal contexts.
-</span>
+:::
 
 ### ▸ Franco-Swiss cross-border geospatial analysis
 **Harmonization of heterogeneous GIS data France-Switzerland** to identify cross-border regulatory discontinuities. Research and exploitation of official databases (IGN, SwissTopo, SITG), coupling of nomenclatures and harmonization of territorial scales. Transformation of complex geospatial analyses into interactive visualizations and public policy recommendations for institutional teams.  
@@ -134,14 +119,13 @@ Intervention on public policy evaluation projects within financial jurisdictions
 <span class="tag">Collaboration</span>
 <span class="tag">Knowledge Management</span>
 
----
-
 # Academic Experience {#education}
 
-## Engineering Master's Program Data Science for Social Sciences | University of Paris Nanterre | 2020 — 2025 
-<span style="text-align: justify; display:block; font-size:0.9em; color:gray;">
+## Engineering Master's Program Data Science for Social Sciences | University of Paris Nanterre | 2020 — 2025
+
+::: {.role-context}
 Selective and intensive program structured around multi-year projects. Reinforced courses in econometrics, data science and public policy analysis. Completion of two research theses under supervision of [Patrice Bertail](https://bertail.perso.math.cnrs.fr/), combining advanced modeling and scientific valorization. Project-based approach with autonomy in identifying data sources and real-world application.
-</span>
+:::
 
 ### ▸ Banking fraud detection
 **Supervised modeling on imbalanced data**. Application of SMOTE/B-SMOTE techniques, cross-validation and financial risk scoring. Model comparison (Random Forest, XGBoost, SVM) with metric optimization for minority classes.  
@@ -206,8 +190,6 @@ Selective and intensive program structured around multi-year projects. Reinforce
 <span class="tag">Graph Algorithms</span>
 <span class="tag">Dash</span>
 <span class="tag">Interactive Viz</span>
-
----
 
 # Commitments and Contributions {#other}
 
