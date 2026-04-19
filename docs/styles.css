@@ -1,32 +1,50 @@
-/* =========================
-   Variables CSS — tokens du design system
-   ========================= */
+/* =========================================================
+   Design tokens — mode clair par défaut
+   ========================================================= */
 :root {
-    /* ---- Couleurs marque ---- */
-    --red-main: #8B0000;
-    --red-bright: #B22222;
-    --accent: var(--red-bright);
+    /* ---- Accent marque ---- */
+    --accent: #8B0000;
+    --accent-hover: #B22222;
 
-    /* ---- Couleurs texte ---- */
-    --text: #ffffff;
-    --text-dim: #f0f0f0;
-    --text-muted: gray;
+    /* ---- Texte (clair) ---- */
+    --text: #16181f;
+    --text-secondary: #3d4049;
+    --text-muted: #7a7d88;
 
-    /* ---- Chrome / séparateurs ---- */
-    --sep: #444444;
-    --navbar-bg: #1a1a1a;
+    /* ---- Surfaces translucides (clair) ---- */
+    --surface: rgba(255, 255, 255, 0.82);
+    --surface-raised: rgba(255, 255, 255, 0.94);
+    --bg-overlay: rgba(244, 241, 236, 0.15);
 
-    /* ---- Fond de page ---- */
+    /* ---- Bordures ---- */
+    --border: rgba(18, 20, 28, 0.08);
+    --border-strong: rgba(18, 20, 28, 0.14);
+
+    /* ---- Ombres cartes (étagées, jamais un seul gros shadow) ---- */
+    --card-shadow: 0 10px 30px rgba(18, 20, 28, 0.08),
+                   0 2px 8px rgba(18, 20, 28, 0.04);
+    --card-shadow-hover: 0 20px 60px rgba(18, 20, 28, 0.12),
+                         0 6px 16px rgba(18, 20, 28, 0.06);
+
+    /* ---- Fond de page (image) ---- */
     --bg-image: url("images/europe2.jpg");
+    /* Halo rouge accent en haut-gauche (subtil, corpo) */
+    --accent-glow: rgba(139, 0, 0, 0.18);
 
-    /* ---- Tags ---- */
-    --tag-bg: #969696;
-    --tag-text: #ffffff;
+    /* ---- Navbar ---- */
+    --navbar-bg: rgba(255, 255, 255, 0.72);
+    --navbar-border: var(--border);
+    --navbar-hover-bg: rgba(18, 20, 28, 0.06);
 
-    /* ---- Scrollbar ---- */
-    --scrollbar-track: var(--navbar-bg);
-    --scrollbar-thumb: var(--red-bright);
-    --scrollbar-thumb-hover: var(--red-main);
+    /* ---- Scrollbar (rouge accent — feel corpo) ---- */
+    --scrollbar-track: rgba(18, 20, 28, 0.06);
+    --scrollbar-thumb: var(--accent);
+    --scrollbar-thumb-hover: var(--accent-hover);
+
+    /* ---- Tags (pills) ---- */
+    --tag-bg: rgba(139, 0, 0, 0.08);
+    --tag-text: var(--accent);
+    --tag-border: rgba(139, 0, 0, 0.18);
 
     /* ---- Espacement ---- */
     --space-xs: 0.25rem;
@@ -37,61 +55,127 @@
     --space-2xl: 3rem;
     --gap: var(--space-xl);
 
-    /* ---- Radius ---- */
-    --radius-sm: 4px;
-    --radius-md: 5px;
-    --radius-pill: 999px;
-
-    /* ---- Ombres ---- */
-    --shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    /* ---- Radius (sharp / corpo) ---- */
+    --radius-sm: 2px;
+    --radius-md: 3px;
+    --radius-lg: 4px;
+    --radius-pill: 2px;
 
     /* ---- Transitions ---- */
-    --duration-fast: .2s;
-    --duration: .25s;
-    --ease: ease;
+    --duration-fast: 180ms;
+    --duration: 300ms;
+    --duration-slow: 500ms;
+    --ease: cubic-bezier(0.4, 0, 0.2, 1);
     --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 
     /* ---- Typographie ---- */
-    --nav-mid-font: 1.1rem;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Space Grotesk', 'Inter', -apple-system, sans-serif;
+    --nav-mid-font: 0.98rem;
 
     /* ---- Décoratifs ---- */
-    --underline-thickness: 3px;
+    --underline-thickness: 2px;
     --underline-offset: 6px;
 }
 
-/* =========================
-   Thème sombre — overrides de tokens
-   ========================= */
+/* =========================================================
+   Thème sombre — overrides
+   ========================================================= */
 [data-theme="dark"] {
-    --bg-image: url("images/europe2_dark.jpg");
-    --red-main: #B22222;
-    --red-bright: #E74C3C;
-    --accent: var(--red-bright);
-    --text-muted: #8a8d98;
-    --tag-bg: #4a4d57;
-    --scrollbar-track: #0f1117;
     color-scheme: dark;
+
+    --accent: #E74C3C;
+    --accent-hover: #ff6b5c;
+
+    --text: #f2f3f5;
+    --text-secondary: #c4c6cc;
+    --text-muted: #8a8d98;
+
+    --surface: rgba(22, 24, 32, 0.70);
+    --surface-raised: rgba(28, 30, 38, 0.86);
+    --bg-overlay: rgba(8, 10, 16, 0.40);
+
+    --border: rgba(255, 255, 255, 0.08);
+    --border-strong: rgba(255, 255, 255, 0.16);
+
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.45),
+                   0 2px 8px rgba(0, 0, 0, 0.25);
+    --card-shadow-hover: 0 20px 60px rgba(0, 0, 0, 0.55),
+                         0 6px 16px rgba(0, 0, 0, 0.35);
+
+    --bg-image: url("images/europe2_dark.jpg");
+    --accent-glow: rgba(231, 76, 60, 0.22);
+
+    --navbar-bg: rgba(14, 16, 22, 0.65);
+    --navbar-hover-bg: rgba(255, 255, 255, 0.06);
+
+    --scrollbar-track: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb: var(--accent);
+    --scrollbar-thumb-hover: var(--accent-hover);
+
+    --tag-bg: rgba(231, 76, 60, 0.12);
+    --tag-border: rgba(231, 76, 60, 0.28);
 }
-[data-theme="dark"] body,
-[data-theme="dark"] h1,
-[data-theme="dark"] h2,
-[data-theme="dark"] h3,
-[data-theme="dark"] h4,
-[data-theme="dark"] h5,
-[data-theme="dark"] h6 { color: #f2f3f5; }
 
-/* =========================
-   Navbar
-   ========================= */
-.navbar { box-shadow: var(--shadow); position: relative; background: var(--navbar-bg) !important; }
+/* =========================================================
+   Transition douce lors du switch de thème (classe ponctuelle posée par JS)
+   ========================================================= */
+.theme-transition,
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+    transition: background-color var(--duration) var(--ease),
+                color var(--duration) var(--ease),
+                border-color var(--duration) var(--ease),
+                box-shadow var(--duration) var(--ease) !important;
+}
 
-section.level1 { scroll-margin-top: 80px; padding-top: 8px; }
+/* =========================================================
+   Base : body, fond à voile, typo, rendu
+   ========================================================= */
+html { scroll-behavior: smooth; }
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--text);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    /* Halo accent (top-left) + voile + image en couches empilées sur body.
+       background-attachment: fixed sur toutes les couches pour éviter le scroll du halo. */
+    background:
+        radial-gradient(ellipse 1200px 950px at top left, var(--accent-glow), transparent 78%),
+        linear-gradient(var(--bg-overlay), var(--bg-overlay)),
+        var(--bg-image) center / cover no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* =========================================================
+   Navbar — glass translucide
+   ========================================================= */
+.navbar {
+    background: var(--navbar-bg) !important;
+    backdrop-filter: saturate(1.6) blur(20px);
+    -webkit-backdrop-filter: saturate(1.6) blur(20px);
+    border-bottom: 1px solid var(--navbar-border);
+    box-shadow: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+/* Le wrapper Quarto #quarto-header porte .fixed-top — on rend son fond translucide aussi */
+#quarto-header { background: transparent !important; }
+
+section.level1 { scroll-margin-top: 88px; }
 
 .navbar-brand {
+    font-family: var(--font-body);
     font-weight: 700 !important;
-    font-size: 1.3rem !important;
+    font-size: 1.05rem !important;
     color: var(--text) !important;
     text-decoration: none !important;
+    letter-spacing: -0.01em;
 }
 .navbar-brand:hover { color: var(--accent) !important; }
 
@@ -101,9 +185,7 @@ section.level1 { scroll-margin-top: 80px; padding-top: 8px; }
     align-items: center;
 }
 
-/* =========================
-   Navigation principale
-   ========================= */
+/* Navigation centrale */
 .navbar-nav:not(.ms-auto) {
     display: flex;
     align-items: center;
@@ -120,8 +202,8 @@ section.level1 { scroll-margin-top: 80px; padding-top: 8px; }
     top: 50%;
     transform: translateY(-50%);
     width: 1px;
-    height: 1.1em;
-    background: var(--sep);
+    height: 1em;
+    background: var(--border-strong);
     pointer-events: none;
 }
 .navbar .navbar-nav:not(.ms-auto) .nav-link {
@@ -130,7 +212,7 @@ section.level1 { scroll-margin-top: 80px; padding-top: 8px; }
     padding: 0 !important;
     margin: 0;
     font-weight: 500;
-    color: var(--text-dim) !important;
+    color: var(--text-secondary) !important;
     text-decoration: none;
     line-height: 1.8;
     font-size: var(--nav-mid-font) !important;
@@ -149,223 +231,588 @@ section.level1 { scroll-margin-top: 80px; padding-top: 8px; }
     transform-origin: center;
     background: var(--accent);
     border-radius: 2px;
-    transition: transform var(--duration) var(--ease);
+    transition: transform var(--duration) var(--ease-out);
 }
 .navbar-nav .nav-link.active::after { transform: translateX(-50%) scaleX(1); }
 
-/* =========================
-   Sélecteurs de langue
-   ========================= */
-.navbar-nav.ms-auto { flex: none; margin-left: auto !important; gap: var(--space-sm); }
+/* Sélecteurs langue + toggle thème (droite) */
+.navbar-nav.ms-auto { flex: none; margin-left: auto !important; gap: var(--space-xs); }
 .navbar-nav.ms-auto .nav-item + .nav-item::before { content: none !important; }
 .navbar-nav.ms-auto .nav-link {
     display: inline-flex !important;
     align-items: center;
-    gap: .35rem;
+    gap: var(--space-xs);
     padding: var(--space-xs) var(--space-sm) !important;
-    font-size: .9rem;
+    font-size: 0.85rem;
     line-height: 1;
     border-radius: var(--radius-sm);
     background: none;
-    color: var(--text-dim) !important;
+    color: var(--text-secondary) !important;
+    transition: background var(--duration-fast) var(--ease), color var(--duration-fast) var(--ease);
 }
-.navbar-nav.ms-auto .nav-link:hover { background: rgba(255, 255, 255, 0.1) !important; }
+.navbar-nav.ms-auto .nav-link:hover { background: var(--navbar-hover-bg) !important; color: var(--accent) !important; }
 
-/* Bouton toggle thème (injecté dans .navbar-nav.ms-auto via scripts.html) */
 .theme-toggle {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background: none;
     border: none;
-    color: var(--text-dim);
+    color: var(--text-secondary);
     font-size: 1rem;
     line-height: 1;
     padding: var(--space-xs) var(--space-sm);
     cursor: pointer;
     border-radius: var(--radius-sm);
+    transition: background var(--duration-fast) var(--ease), color var(--duration-fast) var(--ease);
 }
-.theme-toggle:hover { background: rgba(255, 255, 255, 0.1); color: var(--accent); }
+.theme-toggle:hover { background: var(--navbar-hover-bg); color: var(--accent); }
 
-/* =========================
-   Responsive générique
-   ========================= */
-@media (max-width: 991px) {
-    .navbar-collapse { text-align: center; }
-    .navbar-nav { margin: var(--space-md) 0; flex-direction: column; gap: .4rem; }
-    .navbar-nav .nav-item + .nav-item::before { content: none !important; }
-    .navbar-nav .nav-link { margin: .1rem 0; }
-    .navbar .navbar-nav:not(.ms-auto) .nav-link { font-size: 1rem !important; line-height: 1.7; }
+/* =========================================================
+   Navbar dropdown (ex : Experience → ML & Data Eng / Data Sci)
+   Ouverture au survol (en plus du click Bootstrap)
+   ========================================================= */
+@media (min-width: 992px) {
+    .navbar-nav:not(.ms-auto) .nav-item.dropdown:hover > .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
 }
+.navbar-nav .dropdown-menu {
+    background: var(--surface-raised);
+    backdrop-filter: saturate(1.6) blur(22px);
+    -webkit-backdrop-filter: saturate(1.6) blur(22px);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--card-shadow);
+    padding: var(--space-xs);
+    min-width: 220px;
+    /* Forcer la position en-dessous du toggle (sinon Popper peut la placer au-dessus) */
+    position: absolute !important;
+    top: 100% !important;
+    bottom: auto !important;
+    left: 0 !important;
+    right: auto !important;
+    inset: 100% auto auto 0 !important;
+    transform: none !important;
+    margin-top: 0.25rem;
+}
+.navbar-nav .dropdown-item {
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    transition: background var(--duration-fast) var(--ease), color var(--duration-fast) var(--ease);
+}
+.navbar-nav .dropdown-item:hover,
+.navbar-nav .dropdown-item:focus {
+    background: var(--navbar-hover-bg);
+    color: var(--accent);
+}
+.navbar-nav .dropdown-toggle::after { margin-left: 0.35em; }
 
-/* =========================
-   Transitions globales
-   ========================= */
-* { transition: color var(--duration-fast) var(--ease), background-color var(--duration-fast) var(--ease); }
-
-/* =========================
-   Layout colonnes principales (desktop) — CSS Grid
-   Scope sur .columns:not(.page-columns) pour ne pas entrer en collision
-   avec le wrapper .page-columns de Quarto.
-   ========================= */
+/* =========================================================
+   Layout colonnes principales — CSS Grid
+   ========================================================= */
 .columns:not(.page-columns) {
     display: grid;
-    grid-template-columns: minmax(220px, 260px) minmax(0, 1fr);
+    grid-template-columns: minmax(220px, 270px) minmax(0, 1fr);
     gap: var(--space-xl);
-    max-width: 1440px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+    padding: var(--space-xl) var(--space-md);
+    align-items: start; /* pas de stretch : chaque colonne a sa propre hauteur */
 }
-/* Neutraliser les widths inline injectés par Pandoc (width="30%"/"70%") */
 .columns:not(.page-columns) > .column {
     width: auto !important;
     max-width: none !important;
 }
-.left-column { font-size: 16px; }
-.main-column { font-size: 18px; min-width: 0; }
+.left-column { min-width: 0; }
+.main-column { min-width: 0; }
+/* Espace vertical entre les cartes principales */
+.main-column > section.level1 + section.level1 { margin-top: var(--space-xl); }
 
-.tag { background: var(--tag-bg); color: var(--tag-text); padding: 2px 6px; border-radius: var(--radius-sm); font-size: 0.8em; font-weight: 500; margin-right: 2px; display: inline-block; }
-.flag-icon { height: 1em; vertical-align: -0.15em; margin-right: .25em; display: inline-block; }
-
-/* =========================
-   Contexte de rôle (intro sous titres de section)
-   ========================= */
-.role-context { font-size: 0.9em; color: var(--text-muted); }
-
-/* =========================
-   Fond du site
-   ========================= */
-body {
-    background-image: var(--bg-image);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+/* Sidebar sticky à hauteur de contenu, bornée par la row 1 du grid (s'arrête avant Overview) */
+.left-column { grid-row: 1; align-self: start; }
+.main-column { grid-row: 1; }
+@media (min-width: 1025px) {
+    .left-column {
+        position: sticky;
+        top: 88px;
+        max-height: calc(100vh - 108px);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+    }
 }
 
-/* =========================
-   Scrollbar personnalisée
-   ========================= */
-::-webkit-scrollbar { width: 8px; height: 8px; }
+/* =========================================================
+   Cartes flottantes — LE pattern central
+   Sidebar = une carte ; chaque section de niveau 1 = une carte
+   ========================================================= */
+.left-column,
+.main-column > section.level1 {
+    background: var(--surface);
+    backdrop-filter: saturate(1.6) blur(22px);
+    -webkit-backdrop-filter: saturate(1.6) blur(22px);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    box-shadow: var(--card-shadow);
+    padding: var(--space-xl) var(--space-xl);
+    transition: box-shadow var(--duration) var(--ease-out),
+                border-color var(--duration) var(--ease-out),
+                transform var(--duration) var(--ease-out);
+}
+.left-column:hover,
+.main-column > section.level1:hover {
+    box-shadow: var(--card-shadow-hover);
+    border-color: var(--border-strong);
+}
+
+/* Photo sidebar */
+.left-column img {
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--surface-raised);
+    box-shadow: 0 8px 24px rgba(18, 20, 28, 0.15);
+    margin: 0 auto var(--space-lg);
+    transition: transform var(--duration-slow) var(--ease-out);
+}
+.left-column img:hover { transform: scale(1.03); }
+
+/* Sidebar labels (h3 = Contact / Expertises / Langages / Outils / Langues) */
+.left-column h3 {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--text-muted);
+    margin: var(--space-lg) 0 var(--space-sm);
+}
+.left-column h3:first-child,
+.left-column > section.level3:first-of-type h3,
+.left-column img + * h3 { margin-top: 0; }
+.left-column h3 strong { font-weight: 600; }
+
+.left-column p {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: var(--text-secondary);
+    margin: 0 0 var(--space-sm);
+}
+
+/* =========================================================
+   Typographie des sections principales
+   ========================================================= */
+/* h1 — titres de section (About / Experience / Education / Other) */
+.main-column h1 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.9rem;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    color: var(--text);
+    margin: 0 0 var(--space-lg);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid var(--border-strong);
+}
+
+/* h2 — employeur / organisation (ex : "Cour des comptes depuis 2023") */
+.main-column h2 {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--text);
+    letter-spacing: -0.005em;
+    margin: var(--space-md) 0 var(--space-sm);
+    padding-bottom: var(--space-xs);
+    border-bottom: 1px dashed var(--border-strong);
+}
+
+/* h3 — rôle / poste (ex : "Machine Learning & Data Ingénieur", "Data Scientist") */
+.main-column h3 {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.78rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: var(--space-lg) 0 var(--space-sm);
+}
+
+/* h4 — projet / entrée (titre en gras) */
+.main-column h4 {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.35;
+    color: var(--text);
+    margin: var(--space-lg) 0 var(--space-xs);
+    letter-spacing: -0.005em;
+}
+/* Description d'un projet : un cran plus petite, poids normal même si du strong hérité */
+.main-column h4 + p {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+}
+.main-column h4 + p strong { font-weight: 400; }
+
+/* Paragraphes du main */
+.main-column p {
+    color: var(--text-secondary);
+    margin: 0 0 var(--space-sm);
+    hyphens: auto;
+}
+
+/* =========================================================
+   Rôle-contexte (italique muted + bordure gauche accent)
+   ========================================================= */
+.role-context {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin: var(--space-sm) 0 var(--space-md);
+    padding-left: var(--space-md);
+    border-left: 2px solid var(--border-strong);
+}
+.role-context p { color: var(--text-muted); margin: 0; }
+
+/* =========================================================
+   Lead — première ligne "headline" (section About)
+   ========================================================= */
+.lead {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    color: var(--text);
+    margin: 0 0 var(--space-sm);
+}
+.lead p {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+/* =========================================================
+   Masquer le bloc titre Quarto (on utilise les h1 de section comme titres)
+   ========================================================= */
+#title-block-header,
+header.quarto-title-block { display: none !important; }
+
+/* =========================================================
+   Tags — pills accent discret
+   ========================================================= */
+.tag {
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 2px 2px 2px 0;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--tag-text);
+    background: var(--tag-bg);
+    border: 1px solid var(--tag-border);
+    transition: background var(--duration-fast) var(--ease),
+                color var(--duration-fast) var(--ease),
+                border-color var(--duration-fast) var(--ease);
+}
+.tag:hover {
+    background: var(--accent);
+    color: #ffffff;
+    border-color: var(--accent);
+}
+
+/* =========================================================
+   Liens
+   ========================================================= */
+a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent);
+    text-underline-offset: 2px;
+    transition: color var(--duration-fast) var(--ease), text-decoration-color var(--duration-fast) var(--ease);
+}
+a:hover {
+    color: var(--accent-hover);
+    text-decoration-color: var(--accent-hover);
+}
+
+/* =========================================================
+   Bouton de téléchargement du CV
+   ========================================================= */
+.btn {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.55rem 1.15rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--accent);
+    background: var(--accent);
+    color: #ffffff !important;
+    text-decoration: none !important;
+    transition: background var(--duration-fast) var(--ease),
+                border-color var(--duration-fast) var(--ease),
+                transform var(--duration-fast) var(--ease),
+                box-shadow var(--duration-fast) var(--ease);
+    box-shadow: 0 6px 18px rgba(139, 0, 0, 0.18);
+}
+.btn-primary { background-color: var(--accent) !important; border-color: var(--accent) !important; }
+.btn-primary:hover { background-color: var(--accent-hover) !important; border-color: var(--accent-hover) !important; filter: none; transform: translateY(-1px); }
+
+.main-column a.btn,
+.main-column button.btn {
+    display: block;
+    width: fit-content;
+    margin: var(--space-md) auto 0;
+    text-align: center;
+}
+
+/* =========================================================
+   Flag icons (sélecteur langue)
+   ========================================================= */
+.flag-icon { height: 1em; vertical-align: -0.15em; margin-right: 0.25em; display: inline-block; }
+
+/* =========================================================
+   Scrollbar
+   ========================================================= */
+::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-track { background: var(--scrollbar-track); }
-::-webkit-scrollbar-thumb { background-color: var(--scrollbar-thumb); border-radius: 6px; }
+::-webkit-scrollbar-thumb { background-color: var(--scrollbar-thumb); border-radius: var(--radius-pill); }
 ::-webkit-scrollbar-thumb:hover { background-color: var(--scrollbar-thumb-hover); }
 * { scrollbar-width: thin; scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track); }
 
-.btn { border-radius: var(--radius-md); padding: 0.4rem var(--space-md); font-size: 0.9rem; }
-.btn-primary { background-color: var(--red-main) !important; border-color: var(--red-main) !important; }
-.btn-primary:hover { filter: brightness(0.9); }
-
-h1, h2, h3, h4, h5, h6 { margin-top: var(--space-sm); margin-bottom: 0.3rem; }
-hr { margin-top: var(--space-xl); margin-bottom: 1.2rem; }
-
-a { color: var(--red-main); text-decoration: underline; text-decoration-color: var(--red-main); }
-a:hover { color: var(--red-bright); text-decoration-color: var(--red-bright); }
-
-/* =====================================================
-   Règles orientation-first
-   - Landscape (écran d'ordi) : aucun zoom, layout conservé
-   - Portrait (mobile)        : typographie + padding + fusion colonnes
-   ===================================================== */
-
-/* Landscape: pas de zoom ni compaction, on laisse ton layout tel quel */
-@media (orientation: landscape) {
-  html, body { font-size: 16px; }
-  body { background-attachment: fixed; }
+/* =========================================================
+   Animation reveal — CSS pure, ne dépend PAS du JS
+   (une erreur JS ne doit pas rendre le contenu invisible)
+   ========================================================= */
+@keyframes revealUp {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: none; }
 }
+.left-column,
+.main-column > section.level1 {
+    animation: revealUp var(--duration-slow) var(--ease-out) both;
+}
+.left-column                       { animation-delay: 0ms; }
+.main-column > section.level1:nth-of-type(1) { animation-delay: 60ms; }
+.main-column > section.level1:nth-of-type(2) { animation-delay: 120ms; }
+.main-column > section.level1:nth-of-type(3) { animation-delay: 180ms; }
+.main-column > section.level1:nth-of-type(4) { animation-delay: 240ms; }
 
-/* Portrait = mobile/tablette tenue verticalement */
-/* Portrait (mobile) : texte + grand, colonnes centrées, padding latéral, photo un peu + grande */
-@media (orientation: portrait) and (max-width: 991px) {
-  /* Navbar : cacher la nav centrale, garder les langues côte à côte et centrées */
-  .navbar-nav:not(.ms-auto) { display: none !important; }
-  .navbar-nav.ms-auto {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: .6rem !important;
-    margin: .4rem auto !important;
-  }
+/* =========================================================
+   Overview — section en bas, HORS du .columns (pour ne pas
+   étendre le containing-block du sticky sidebar)
+   Alignée sur la même zone visuelle que .columns (max 1568px)
+   ========================================================= */
+.overview {
+    box-sizing: border-box;
+    max-width: calc(1600px - 2 * var(--space-md));
+    width: calc(100% - 2 * var(--space-md));
+    margin: var(--space-lg) auto var(--space-2xl);
+    background: var(--surface);
+    backdrop-filter: saturate(1.6) blur(22px);
+    -webkit-backdrop-filter: saturate(1.6) blur(22px);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--card-shadow);
+    padding: var(--space-xl) var(--space-xl);
+    animation: revealUp var(--duration-slow) var(--ease-out) both;
+    animation-delay: 300ms;
+    transition: box-shadow var(--duration) var(--ease-out),
+                border-color var(--duration) var(--ease-out);
+}
+.overview:hover {
+    box-shadow: var(--card-shadow-hover);
+    border-color: var(--border-strong);
+}
+.overview h1 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.9rem;
+    letter-spacing: -0.01em;
+    color: var(--text);
+    margin: 0 0 var(--space-lg);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid var(--border-strong);
+}
+.overview h2 {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: var(--space-lg) 0 var(--space-sm);
+    padding: 0;
+    border: none;
+}
+.overview h2:first-of-type { margin-top: var(--space-sm); }
 
-  /* Colonnes empilées ET centrées, avec padding latéral pour éviter l'effet collé aux bords */
-  .columns, .page-columns {
-    display: block !important;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .left-column, .main-column, .column {
-    width: 100% !important;
-    max-width: 720px !important;         /* centrer une largeur confortable */
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-top: 0 !important;
-    font-size: 1.1rem;                  /* texte un peu plus gros en mobile */
-  }
-  .left-column + .main-column { margin-top: var(--space-md) !important; }
-
-  /* Photo un peu plus grande et centrée */
-  .left-column img {
-    max-width: 200px;
-    height: auto;
+/* Recherche compétences */
+.skills-search {
     display: block;
-    margin: 0 auto .75rem;
-    border-radius: 6px;
-  }
-
-  /* Fond FIXE en mobile comme tu veux */
-  body {
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-  }
+    width: 100%;
+    max-width: 440px;
+    padding: var(--space-sm) var(--space-md);
+    background: transparent;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-sm);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    margin-bottom: var(--space-md);
+    transition: border-color var(--duration-fast) var(--ease),
+                box-shadow var(--duration-fast) var(--ease),
+                background var(--duration-fast) var(--ease);
+}
+.skills-search::placeholder { color: var(--text-muted); }
+.skills-search:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-glow);
 }
 
-/* Sécurité globale : gouttières et pas de scroll horizontal sur les fenêtres compactes */
-@media (max-width: 1200px) {
-  .columns, .page-columns {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  html, body { overflow-x: hidden; }
+/* Chips de compétences (texte) */
+.skill-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    margin: 3px;
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    border: 1px solid var(--tag-border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background var(--duration-fast) var(--ease),
+                color var(--duration-fast) var(--ease),
+                border-color var(--duration-fast) var(--ease);
+}
+.skill-chip:hover {
+    background: var(--accent);
+    color: #ffffff;
+    border-color: var(--accent);
+}
+.skill-chip.is-hidden { display: none; }
+.overview section.level2.is-empty { display: none; }
+
+/* =========================================================
+   Inputs en mode sombre : fond quasi-noir pour les recherches
+   (Quarto search + notre skills-search)
+   ========================================================= */
+[data-theme="dark"] input[type="search"],
+[data-theme="dark"] input[type="text"],
+[data-theme="dark"] .aa-Input,
+[data-theme="dark"] #quarto-search input,
+[data-theme="dark"] .skills-search {
+    background: rgba(0, 0, 0, 0.55);
+    color: var(--text);
+    border-color: var(--border-strong);
 }
 
-/* Tablettes en paysage : empiler aussi pour éviter tout écrasement/coupe */
-@media (orientation: landscape) and (min-width: 768px) and (max-width: 1199px) {
-  .columns, .page-columns { display: block !important; }
-  .left-column, .main-column, .column {
-    width: 100% !important;
-    max-width: 980px !important;          /* lisible en paysage sans couper */
-    margin-left: auto !important;
-    margin-right: auto !important;
-    font-size: 1.02rem;                   /* léger boost de lisibilité */
-  }
-  .left-column + .main-column { margin-top: var(--space-md) !important; }
-
-  /* Photo un peu réduite mais propre */
-  .left-column img { max-width: 190px; height: auto; display: block; margin: 0 auto .75rem; }
+/* =========================================================
+   Accessibilité : respect de prefers-reduced-motion
+   ========================================================= */
+@media (prefers-reduced-motion: reduce) {
+    * , *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
 }
 
-
-/* Très petit téléphone: encore un peu plus grand et plus de padding */
-@media (orientation: portrait) and (max-width: 380px) {
-  .left-column, .main-column, .column { font-size: 1.12rem; }
-  .columns, .page-columns { padding-left: 14px; padding-right: 14px; }
-  .left-column img { max-width: 160px; }
+/* =========================================================
+   Focus visible (navigation clavier)
+   ========================================================= */
+:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
 }
 
-/* Corps justifié (hors titres et tags) */
-.main-column p,
-.left-column p {
-  text-align: justify;
-  text-justify: inter-word;
+/* =========================================================
+   Responsive
+   ========================================================= */
+@media (max-width: 1024px) {
+    .columns:not(.page-columns) {
+        display: block;
+        padding: var(--space-lg) var(--space-md);
+    }
+    .left-column { margin-bottom: var(--space-xl); }
+    .main-column { gap: var(--space-lg); }
+    .main-column h1 { font-size: 1.65rem; }
 }
 
-/* Bouton "Télécharger le CV" : centré sans pleine largeur */
-.main-column a.btn,
-.main-column button.btn {
-  display: block;          /* Changé de inline-block à block */
-  width: fit-content;      /* Garde la largeur naturelle */
-  margin: var(--space-md) auto;
-  text-align: center;
+@media (max-width: 768px) {
+    .navbar-nav:not(.ms-auto) { display: none !important; }
+    .navbar-nav.ms-auto {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: var(--space-xs) !important;
+    }
+    .columns:not(.page-columns) { padding: var(--space-md); }
+    .left-column,
+    .main-column > section.level1 {
+        padding: var(--space-lg);
+        border-radius: 14px;
+    }
+    html, body { overflow-x: hidden; }
+}
+
+@media (max-width: 480px) {
+    .columns:not(.page-columns) { padding: var(--space-sm); }
+    .left-column,
+    .main-column > section.level1 { padding: var(--space-md); }
+    .main-column h1 { font-size: 1.4rem; }
+}
+
+/* =========================================================
+   Impression — CV imprimable propre depuis le navigateur
+   ========================================================= */
+@media print {
+    .navbar, .nav-footer, .footer, .theme-toggle { display: none !important; }
+    body {
+        background: #ffffff !important;
+        color: #000000 !important;
+    }
+    .columns:not(.page-columns) {
+        display: block;
+        max-width: none;
+        padding: 0;
+    }
+    .left-column,
+    .main-column > section.level1 {
+        background: none !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        border: 1px solid #cccccc !important;
+        box-shadow: none !important;
+        animation: none !important;
+        page-break-inside: avoid;
+        margin-bottom: 1rem;
+    }
+    .tag { border-color: #888888 !important; background: none !important; color: #000000 !important; }
+    a { color: #000000 !important; text-decoration: underline; }
 }

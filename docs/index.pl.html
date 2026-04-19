@@ -84,6 +84,14 @@ ul.task-list li input[type="checkbox"] {
     }
   })();
 </script>
+<!-- Préconnexion DNS + preload non-bloquant des Google Fonts.
+     Inter (corps) + Space Grotesk (display) : feel corpo/technique, sharp. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap">
+</noscript>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -97,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title"><strong>VANESSA KENNICHE SANOCKA</strong> <span style="font-weight:400; color:#aaa;"> — Data Scientist</span></span>
+    <span class="navbar-title"><strong>VANESSA KENNICHE SANOCKA</strong></span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Szukaj"></div>
@@ -110,17 +118,32 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./#about"> 
 <span class="menu-text">About</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./#experience"> 
-<span class="menu-text">Professional Experience</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-professional" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Professional</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-professional">    
+        <li>
+    <a class="dropdown-item" href="./#experience-ml">
+ <span class="dropdown-text">ML &amp; Data Engineering</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./#experience-ds">
+ <span class="dropdown-text">Data Science</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./#education"> 
-<span class="menu-text">Academic Experience</span></a>
+<span class="menu-text">Academic</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./#other"> 
 <span class="menu-text">Other</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./#overview"> 
+<span class="menu-text">Overview</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -162,9 +185,9 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/photo.jpg" class="img-fluid" style="width:100.0%"></p>
 <section id="kontakt" class="level3">
 <h3 class="anchored" data-anchor-id="kontakt"><strong>Kontakt</strong></h3>
-<p>KENSAN.VAN@GMAIL.COM<br>
-+33 7 68 14 01 74<br>
-<a href="https://www.linkedin.com/in/vanessa-kenniche-sanocka/">LinkedIn</a></p>
+<p><strong>KENSAN.VAN@GMAIL.COM</strong><br>
+<strong>+33 7 68 14 01 74</strong><br>
+<strong><a href="https://www.linkedin.com/in/vanessa-kenniche-sanocka/">LinkedIn</a></strong></p>
 </section>
 <section id="specjalizacje" class="level3">
 <h3 class="anchored" data-anchor-id="specjalizacje"><strong>Specjalizacje</strong></h3>
@@ -200,41 +223,41 @@ Angielski C1 (TOEIC)</p>
 <div class="role-context">
 <p>Praca przy projektach ewaluacji polityk publicznych w ramach jurysdykcji finansowych. Produkcja analiz zorientowanych na decyzje we współpracy bezpośredniej z sędziami i interesariuszami instytucjonalnymi. Znajomość standardów poufności i jasna komunikacja w kontekstach formalnych.</p>
 </div>
-<section id="francusko-szwajcarska-analiza-geospatial-transgraniczna" class="level3">
-<h3 class="anchored" data-anchor-id="francusko-szwajcarska-analiza-geospatial-transgraniczna">▸ Francusko-szwajcarska analiza geospatial transgraniczna</h3>
-<p><strong>Harmonizacja heterogenicznych danych GIS Francja-Szwajcaria</strong> w celu identyfikacji transgranicznych nieciągłości regulacyjnych. Badania i wykorzystanie oficjalnych baz danych (IGN, SwissTopo, SITG), łączenie nomenklatur i harmonizacja skal terytorialnych. Przekształcanie złożonych analiz geospatial w interaktywne wizualizacje i rekomendacje polityk publicznych dla zespołów instytucjonalnych.<br>
+<section id="analiza-geospatial-i-harmonizacja-heterogenicznych-danych-gis-w-skali-transgranicznej-francusko-szwajcarskiej-mająca-na-celu-identyfikację-nieciągłości-regulacyjnych-między-dwoma-terytoriami." class="level4">
+<h4 class="anchored" data-anchor-id="analiza-geospatial-i-harmonizacja-heterogenicznych-danych-gis-w-skali-transgranicznej-francusko-szwajcarskiej-mająca-na-celu-identyfikację-nieciągłości-regulacyjnych-między-dwoma-terytoriami.">Analiza geospatial i harmonizacja heterogenicznych danych GIS w skali transgranicznej francusko-szwajcarskiej, mająca na celu identyfikację nieciągłości regulacyjnych między dwoma terytoriami.</h4>
+<p>Badania i wykorzystanie oficjalnych baz danych (IGN, SwissTopo, SITG), łączenie nomenklatur i harmonizacja skal terytorialnych. Przekształcanie złożonych analiz geospatial w interaktywne wizualizacje i rekomendacje polityk publicznych dla zespołów instytucjonalnych.<br>
 <span class="tag">Python</span> <span class="tag">QGIS</span> <span class="tag">GeoPandas</span> <span class="tag">PlotLy</span></p>
 </section>
-<section id="ewaluacja-polityk-taryfikacji-transportu-miejskiego" class="level3">
-<h3 class="anchored" data-anchor-id="ewaluacja-polityk-taryfikacji-transportu-miejskiego">▸ Ewaluacja polityk taryfikacji transportu miejskiego</h3>
-<p><strong>Zaawansowane modelowanie ekonometryczne</strong> na danych krajowych (GART, CEREMA) łączące modele panelowe, event studies i metody badawcze. Przetwarzanie poufnych baz danych użytkowników poprzez próbkowanie stratyfikowane, dostosowanie propensity score, kalibrację marż i bootstrapping. Wzbogacenie przez badania uzupełniające (baza FILOSOFI) w celu sformułowania rekomendacji taryfikacyjnych z interaktywną prezentacją poprzez Shiny.<br>
+<section id="ewaluacja-polityk-taryfikacji-transportu-miejskiego-poprzez-zaawansowane-modelowanie-ekonometryczne-na-danych-krajowych-gart-cerema-łączące-modele-panelowe-event-studies-i-metody-badawcze." class="level4">
+<h4 class="anchored" data-anchor-id="ewaluacja-polityk-taryfikacji-transportu-miejskiego-poprzez-zaawansowane-modelowanie-ekonometryczne-na-danych-krajowych-gart-cerema-łączące-modele-panelowe-event-studies-i-metody-badawcze.">Ewaluacja polityk taryfikacji transportu miejskiego poprzez zaawansowane modelowanie ekonometryczne na danych krajowych (GART, CEREMA) łączące modele panelowe, event studies i metody badawcze.</h4>
+<p>Przetwarzanie poufnych baz danych użytkowników poprzez próbkowanie stratyfikowane, dostosowanie propensity score, kalibrację marż i bootstrapping. Wzbogacenie przez badania uzupełniające (baza FILOSOFI) w celu sformułowania rekomendacji taryfikacyjnych z interaktywną prezentacją poprzez Shiny.<br>
 <span class="tag">R</span> <span class="tag">Panel Data</span> <span class="tag">Event Study</span> <span class="tag">Causal Inference</span> <span class="tag">Survey Methods</span> <span class="tag">Propensity Score</span> <span class="tag">Bootstrap</span> <span class="tag">Shiny</span> <span class="tag">Leaflet</span></p>
 </section>
-<section id="pipeline-nlp-i-rag-do-eksploracji-dokumentów" class="level3">
-<h3 class="anchored" data-anchor-id="pipeline-nlp-i-rag-do-eksploracji-dokumentów">▸ Pipeline NLP i RAG do eksploracji dokumentów</h3>
-<p><strong>Pełna integracja</strong> do eksploracji i semantycznego przeszukiwania dokumentów instytucjonalnych. Kompletna architektura obejmująca preprocessing NLP (tokenizacja, lematyzacja, NER), modele embeddings (SBERT, Word2Vec), indeksowanie ElasticSearch i interfejs webowy Next.js. Rozwój FastAPI dla zapytań w czasie rzeczywistym i migracja do nowego wewnętrznego systemu archiwizacji.<br>
+<section id="pipeline-nlp-i-rag-do-eksploracji-dokumentów-pełna-integracja-semantycznego-przeszukiwania-dokumentów-instytucjonalnych." class="level4">
+<h4 class="anchored" data-anchor-id="pipeline-nlp-i-rag-do-eksploracji-dokumentów-pełna-integracja-semantycznego-przeszukiwania-dokumentów-instytucjonalnych.">Pipeline NLP i RAG do eksploracji dokumentów: pełna integracja semantycznego przeszukiwania dokumentów instytucjonalnych.</h4>
+<p>Kompletna architektura obejmująca preprocessing NLP (tokenizacja, lematyzacja, NER), modele embeddings (SBERT, Word2Vec), indeksowanie ElasticSearch i interfejs webowy Next.js. Rozwój FastAPI dla zapytań w czasie rzeczywistym i migracja do nowego wewnętrznego systemu archiwizacji.<br>
 <span class="tag">Python</span> <span class="tag">spaCy</span> <span class="tag">SBERT</span> <span class="tag">ElasticSearch</span> <span class="tag">RAG</span> <span class="tag">FastAPI</span> <span class="tag">Next.js</span> <span class="tag">NLP</span> <span class="tag">Embeddings</span></p>
 </section>
-<section id="modelowanie-predykcyjne-na-krajowych-rejestrach-sądowych-casd" class="level3">
-<h3 class="anchored" data-anchor-id="modelowanie-predykcyjne-na-krajowych-rejestrach-sądowych-casd">▸ Modelowanie predykcyjne na krajowych rejestrach sądowych (CASD)</h3>
-<p><strong>Algorytmy uczenia maszynowego</strong> na danych longitudinalnych z Krajowego Rejestru Karnego. Analiza przeżycia i scoring ryzyka dla trajektorii przestępczych. Intensywne przetwarzanie identyfikatorów, konstrukcja paneli czasowych i modelowanie recydywy do wsparcia decyzji publicznych w środowisku zabezpieczonym wysokiej poufności.<br>
+<section id="modelowanie-predykcyjne-na-krajowych-rejestrach-sądowych-casd-z-algorytmami-uczenia-maszynowego-na-danych-longitudinalnych-z-krajowego-rejestru-karnego." class="level4">
+<h4 class="anchored" data-anchor-id="modelowanie-predykcyjne-na-krajowych-rejestrach-sądowych-casd-z-algorytmami-uczenia-maszynowego-na-danych-longitudinalnych-z-krajowego-rejestru-karnego.">Modelowanie predykcyjne na krajowych rejestrach sądowych (CASD) z algorytmami uczenia maszynowego na danych longitudinalnych z Krajowego Rejestru Karnego.</h4>
+<p>Analiza przeżycia i scoring ryzyka dla trajektorii przestępczych. Intensywne przetwarzanie identyfikatorów, konstrukcja paneli czasowych i modelowanie recydywy do wsparcia decyzji publicznych w środowisku zabezpieczonym wysokiej poufności.<br>
 <span class="tag">R</span> <span class="tag">Machine Learning</span> <span class="tag">Survival Analysis</span> <span class="tag">Panel Data</span> <span class="tag">Risk Scoring</span> <span class="tag">CASD</span> <span class="tag">Longitudinal Data</span></p>
 </section>
-<section id="analiza-danych-podatkowych-i-zatrudnieniowych-eec-pote" class="level3">
-<h3 class="anchored" data-anchor-id="analiza-danych-podatkowych-i-zatrudnieniowych-eec-pote">▸ Analiza danych podatkowych i zatrudnieniowych (EEC, POTE)</h3>
+<section id="analiza-danych-podatkowych-i-zatrudnieniowych-eec-pote" class="level4">
+<h4 class="anchored" data-anchor-id="analiza-danych-podatkowych-i-zatrudnieniowych-eec-pote">Analiza danych podatkowych i zatrudnieniowych (EEC, POTE)</h4>
 <p><strong>Wykorzystanie badań zatrudnienia INSEE</strong> i baz podatkowych poprzez CASD do ewaluacji reform (emerytury, ustawa PACTE). Modelowanie statystyczne na sprzężonych danych administracyjnych, harmonizacja heterogenicznych baz danych i dopasowywanie identyfikatorów. Produkcja wskaźników ekonomicznych i ewaluacja wpływu polityk społecznych.<br>
 <span class="tag">R</span> <span class="tag">Statistical Modeling</span> <span class="tag">Administrative Data</span> <span class="tag">Policy Evaluation</span> <span class="tag">Data Linkage</span> <span class="tag">CASD</span> <span class="tag">Economic Indicators</span></p>
 </section>
 </section>
 <section id="projekty-przekrojowe-i-wkład-instytucjonalny" class="level2">
 <h2 class="anchored" data-anchor-id="projekty-przekrojowe-i-wkład-instytucjonalny">Projekty przekrojowe i wkład instytucjonalny</h2>
-<section id="rozwój-modułów-szkoleniowych-dla-data-scientists" class="level3">
-<h3 class="anchored" data-anchor-id="rozwój-modułów-szkoleniowych-dla-data-scientists">▸ Rozwój modułów szkoleniowych dla data scientists</h3>
+<section id="rozwój-modułów-szkoleniowych-dla-data-scientists" class="level4">
+<h4 class="anchored" data-anchor-id="rozwój-modułów-szkoleniowych-dla-data-scientists">Rozwój modułów szkoleniowych dla data scientists</h4>
 <p><strong>Projektowanie narzędzi edukacyjnych</strong>: moduł badań statystycznych (stratyfikacja, ważenie, kalibracja), tutorial kartografii interaktywnej (R/Python, Leaflet/Folium), standardowy szablon Quarto dla raportów reprodukowalnych. Prowadzenie warsztatów wewnętrznych i dokumentacja techniczna dla zbiorowego rozwoju umiejętności.<br>
 <span class="tag">R</span> <span class="tag">Python</span> <span class="tag">Quarto</span> <span class="tag">Pedagogy</span> <span class="tag">Documentation</span></p>
 </section>
-<section id="platforma-współpracy-dla-zespołu-data-science" class="level3">
-<h3 class="anchored" data-anchor-id="platforma-współpracy-dla-zespołu-data-science">▸ Platforma współpracy dla zespołu data science</h3>
+<section id="platforma-współpracy-dla-zespołu-data-science" class="level4">
+<h4 class="anchored" data-anchor-id="platforma-współpracy-dla-zespołu-data-science">Platforma współpracy dla zespołu data science</h4>
 <p><strong>Architektura dzielenia się wiedzą</strong>: rozwój wewnętrznej platformy do centralizacji zasobów, peer reviews i sesji szkoleniowych. Implementacja dobrych praktyk Git, standardów kodu i procesów walidacji współpracy.<br>
 <span class="tag">GitLab</span> <span class="tag">Collaboration</span> <span class="tag">Knowledge Management</span></p>
 </section>
@@ -247,43 +270,43 @@ Angielski C1 (TOEIC)</p>
 <div class="role-context">
 <p>Selektywny i intensywny program strukturalny wokół projektów wieloletnich. Wzmocnione kursy w ekonometrii, data science i analizie polityk publicznych. Ukończenie dwóch prac badawczych pod nadzorem <a href="https://bertail.perso.math.cnrs.fr/">Patrice Bertail</a>, łączących zaawansowane modelowanie i wartościowanie naukowe. Podejście projektowe z autonomią w identyfikacji źródeł danych i zastosowaniu w rzeczywistości.</p>
 </div>
-<section id="wykrywanie-oszustw-bankowych" class="level3">
-<h3 class="anchored" data-anchor-id="wykrywanie-oszustw-bankowych">▸ Wykrywanie oszustw bankowych</h3>
+<section id="wykrywanie-oszustw-bankowych" class="level4">
+<h4 class="anchored" data-anchor-id="wykrywanie-oszustw-bankowych">Wykrywanie oszustw bankowych</h4>
 <p><strong>Modelowanie nadzorowane na danych niezrównoważonych</strong>. Zastosowanie technik SMOTE/B-SMOTE, walidacja krzyżowa i scoring ryzyka finansowego. Porównanie modeli (Random Forest, XGBoost, SVM) z optymalizacją metryk dla klas mniejszościowych.<br>
 <span class="tag">Python</span> <span class="tag">Scikit-learn</span> <span class="tag">SMOTE</span> <span class="tag">Cross-validation</span> <span class="tag">Financial Risk</span></p>
 </section>
-<section id="wykrywanie-pricing-algorithmiczny-z-laboratorium-economix" class="level3">
-<h3 class="anchored" data-anchor-id="wykrywanie-pricing-algorithmiczny-z-laboratorium-economix">▸ Wykrywanie pricing algorithmiczny — z laboratorium EconomiX</h3>
+<section id="wykrywanie-pricing-algorithmiczny-z-laboratorium-economix" class="level4">
+<h4 class="anchored" data-anchor-id="wykrywanie-pricing-algorithmiczny-z-laboratorium-economix">Wykrywanie pricing algorithmiczny — z laboratorium EconomiX</h4>
 <p><strong>Scraping wysokiej częstotliwości do data lake</strong>, klasyfikacja i estymacja dostosowań cen poprzez modele fixed-effects. Testy robustności i wykrywanie wzorców automatycznej taryfikacji na danych e-commerce.<br>
 <span class="tag">Python</span> <span class="tag">Web Scraping</span> <span class="tag">Fixed Effects</span> <span class="tag">Price Analytics</span> <span class="tag">Data Lake</span></p>
 </section>
-<section id="benchmarking-determinantów-innowacji-azja-południowa" class="level3">
-<h3 class="anchored" data-anchor-id="benchmarking-determinantów-innowacji-azja-południowa">▸ Benchmarking determinantów innowacji (Azja Południowa)</h3>
+<section id="benchmarking-determinantów-innowacji-azja-południowa" class="level4">
+<h4 class="anchored" data-anchor-id="benchmarking-determinantów-innowacji-azja-południowa">Benchmarking determinantów innowacji (Azja Południowa)</h4>
 <p><strong>Modelowanie ekonometryczne cross-country</strong> (logit/Poisson) na danych badawczych. Testy robustności poprzez regularyzację Lasso i analiza porównawcza czynników innowacji (Indie, Bangladesz, Pakistan, Nepal).<br>
 <span class="tag">R</span> <span class="tag">Econometrics</span> <span class="tag">Cross-country Analysis</span> <span class="tag">Lasso Regularization</span> <span class="tag">Innovation Policy</span></p>
 </section>
-<section id="analiza-sieciowa-głosowań-parlamentarnych" class="level3">
-<h3 class="anchored" data-anchor-id="analiza-sieciowa-głosowań-parlamentarnych">▸ Analiza sieciowa głosowań parlamentarnych</h3>
+<section id="analiza-sieciowa-głosowań-parlamentarnych" class="level4">
+<h4 class="anchored" data-anchor-id="analiza-sieciowa-głosowań-parlamentarnych">Analiza sieciowa głosowań parlamentarnych</h4>
 <p><strong>Scraping otwartych danych rządowych</strong>, konstrukcja macierzy odległości Manhattan i clustering spring layout do identyfikacji koalicji transpartyjnych. Interaktywna wizualizacja bliskości politycznych.<br>
 <span class="tag">Python</span> <span class="tag">NetworkX</span> <span class="tag">Graph Theory</span> <span class="tag">Political Analysis</span> <span class="tag">Dash</span></p>
 </section>
-<section id="pipeline-demograficzny-power-bi" class="level3">
-<h3 class="anchored" data-anchor-id="pipeline-demograficzny-power-bi">▸ Pipeline demograficzny Power BI</h3>
+<section id="pipeline-demograficzny-power-bi" class="level4">
+<h4 class="anchored" data-anchor-id="pipeline-demograficzny-power-bi">Pipeline demograficzny Power BI</h4>
 <p><strong>Hurtownia danych MySQL schema gwiazdy</strong>, zapytania okienkowe (średnie kroczące) i dashboard terytorialny dla wskaźników polityki mieszkaniowej. Kompletna architektura BI z ETL poprzez MageAI.<br>
 <span class="tag">SQL</span> <span class="tag">MySQL</span> <span class="tag">Power BI</span> <span class="tag">Data Warehouse</span> <span class="tag">ETL</span></p>
 </section>
-<section id="inteligencja-patentowa-patstat" class="level3">
-<h3 class="anchored" data-anchor-id="inteligencja-patentowa-patstat">▸ Inteligencja patentowa PATSTAT</h3>
+<section id="inteligencja-patentowa-patstat" class="level4">
+<h4 class="anchored" data-anchor-id="inteligencja-patentowa-patstat">Inteligencja patentowa PATSTAT</h4>
 <p><strong>Mapowanie konkurencyjne</strong> i pozycjonowanie strategiczne sektorowe z wizualizacjami geospatial. Analiza rodzin patentów, cytowań i rekomendacje polityki przemysłowej na oficjalnej bazie danych.<br>
 <span class="tag">Python</span> <span class="tag">SQL</span> <span class="tag">PATSTAT</span> <span class="tag">Patent Analysis</span> <span class="tag">Geospatial Viz</span></p>
 </section>
-<section id="data-lake-reddit-steamdb" class="level3">
-<h3 class="anchored" data-anchor-id="data-lake-reddit-steamdb">▸ Data Lake Reddit &amp; SteamDB</h3>
+<section id="data-lake-reddit-steamdb" class="level4">
+<h4 class="anchored" data-anchor-id="data-lake-reddit-steamdb">Data Lake Reddit &amp; SteamDB</h4>
 <p><strong>Pipeline zbierania i analizy</strong>: masowy scraping danych, orkiestracja Airflow, ingestion w czasie rzeczywistym do data lake. Architektura Kafka/Spark z magazynowaniem Parquet i monitoringiem Grafana.<br>
 <span class="tag">Python</span> <span class="tag">Airflow</span> <span class="tag">Kafka</span> <span class="tag">Spark</span> <span class="tag">Data Lake</span></p>
 </section>
-<section id="imdb-grafy-najkrótszej-ścieżki" class="level3">
-<h3 class="anchored" data-anchor-id="imdb-grafy-najkrótszej-ścieżki">▸ IMDB — Grafy najkrótszej ścieżki</h3>
+<section id="imdb-grafy-najkrótszej-ścieżki" class="level4">
+<h4 class="anchored" data-anchor-id="imdb-grafy-najkrótszej-ścieżki">IMDB — Grafy najkrótszej ścieżki</h4>
 <p><strong>Konstrukcja grafu bipartite</strong> aktorzy-filmy, obliczanie najkrótszych ścieżek z NetworkX. Interfejs Dash dla interaktywnych zapytań z ograniczeniami czasowymi i wizualizacją sieci.<br>
 <span class="tag">Python</span> <span class="tag">NetworkX</span> <span class="tag">Graph Algorithms</span> <span class="tag">Dash</span> <span class="tag">Interactive Viz</span></p>
 </section>
@@ -291,31 +314,55 @@ Angielski C1 (TOEIC)</p>
 </section>
 <section id="other" class="level1">
 <h1>Zaangażowania i wkład</h1>
-<section id="ambasador-stem-program-dziewczyny-i-matematyka" class="level3">
-<h3 class="anchored" data-anchor-id="ambasador-stem-program-dziewczyny-i-matematyka">▸ Ambasador STEM — Program “Dziewczyny i Matematyka”</h3>
+<section id="ambasador-stem-program-dziewczyny-i-matematyka" class="level4">
+<h4 class="anchored" data-anchor-id="ambasador-stem-program-dziewczyny-i-matematyka">Ambasador STEM — Program “Dziewczyny i Matematyka”</h4>
 <p><strong>Sensibilizacja uczennic liceum</strong> na kariery naukowe w ramach narodowego planu promocji kierunków STEM. Interwencja na Uniwersytecie Paris Nanterre dla dekonstrukcji stereotypów płciowych w matematyce i naukach.</p>
 </section>
-<section id="wkład-open-source-i-szkolenia" class="level3">
-<h3 class="anchored" data-anchor-id="wkład-open-source-i-szkolenia">▸ Wkład open source i szkolenia</h3>
+<section id="wkład-open-source-i-szkolenia" class="level4">
+<h4 class="anchored" data-anchor-id="wkład-open-source-i-szkolenia">Wkład open source i szkolenia</h4>
 <p><strong>Rozwój zasobów edukacyjnych</strong>: szablony Quarto, moduły R dla metod badawczych, tutoriale kartografii interaktywnej. Dzielenie się najlepszymi praktykami w reprodukowalności i dokumentacji technicznej.</p>
 </section>
-<section id="zainteresowania" class="level3">
-<h3 class="anchored" data-anchor-id="zainteresowania">▸ Zainteresowania</h3>
+<section id="zainteresowania" class="level4">
+<h4 class="anchored" data-anchor-id="zainteresowania">Zainteresowania</h4>
 <p>Sztuka cyfrowa, projektowanie graficzne, modelowanie 3D, kolarstwo górskie, gimnastyka, historia współczesna, numizmatyka</p>
 </section>
 </section>
 </div>
 </div>
+<section id="overview" class="level1 overview">
+<h1>Umiejętności</h1>
+<p><input type="search" class="skills-search" placeholder="Wyszukaj umiejętność…"></p>
+<section id="języki-1" class="level2">
+<h2 class="anchored" data-anchor-id="języki-1">Języki</h2>
+<p><span class="skill-chip">Python</span> <span class="skill-chip">R</span> <span class="skill-chip">SQL</span> <span class="skill-chip">JavaScript</span> <span class="skill-chip">TypeScript</span> <span class="skill-chip">Bash</span> <span class="skill-chip">HTML/CSS</span> <span class="skill-chip">Scala</span></p>
+</section>
+<section id="frameworki-i-biblioteki" class="level2">
+<h2 class="anchored" data-anchor-id="frameworki-i-biblioteki">Frameworki i biblioteki</h2>
+<p><span class="skill-chip">PyTorch</span> <span class="skill-chip">TensorFlow</span> <span class="skill-chip">Scikit-learn</span> <span class="skill-chip">Pandas</span> <span class="skill-chip">NumPy</span> <span class="skill-chip">FastAPI</span> <span class="skill-chip">Next.js</span> <span class="skill-chip">React</span> <span class="skill-chip">Shiny</span> <span class="skill-chip">Dash</span> <span class="skill-chip">spaCy</span> <span class="skill-chip">NetworkX</span> <span class="skill-chip">XGBoost</span> <span class="skill-chip">Transformers</span></p>
+</section>
+<section id="bazy-danych" class="level2">
+<h2 class="anchored" data-anchor-id="bazy-danych">Bazy danych</h2>
+<p><span class="skill-chip">PostgreSQL</span> <span class="skill-chip">MySQL</span> <span class="skill-chip">ElasticSearch</span> <span class="skill-chip">MongoDB</span> <span class="skill-chip">SQLite</span> <span class="skill-chip">Redis</span></p>
+</section>
+<section id="cloud-data-devops" class="level2">
+<h2 class="anchored" data-anchor-id="cloud-data-devops">Cloud / Data / DevOps</h2>
+<p><span class="skill-chip">Docker</span> <span class="skill-chip">Git</span> <span class="skill-chip">GitLab</span> <span class="skill-chip">Airflow</span> <span class="skill-chip">Spark</span> <span class="skill-chip">Kafka</span> <span class="skill-chip">Quarto</span> <span class="skill-chip">Power BI</span> <span class="skill-chip">QGIS</span> <span class="skill-chip">MageAI</span> <span class="skill-chip">Grafana</span> <span class="skill-chip">Parquet</span></p>
+</section>
+<section id="metody-i-inne" class="level2">
+<h2 class="anchored" data-anchor-id="metody-i-inne">Metody i inne</h2>
+<p><span class="skill-chip">Econometrics</span> <span class="skill-chip">Machine Learning</span> <span class="skill-chip">Deep Learning</span> <span class="skill-chip">NLP</span> <span class="skill-chip">RAG</span> <span class="skill-chip">Causal Inference</span> <span class="skill-chip">Survival Analysis</span> <span class="skill-chip">Panel Data</span> <span class="skill-chip">Event Study</span> <span class="skill-chip">Bootstrap</span> <span class="skill-chip">Cross-validation</span> <span class="skill-chip">SMOTE</span> <span class="skill-chip">Propensity Score</span> <span class="skill-chip">Survey Methods</span> <span class="skill-chip">Graph Theory</span></p>
+</section>
+</section>
 
 
 
 </main> <!-- /main -->
 <script>
-  // Traductions pour chaque langue - organisées par position
+  // Traductions de la navbar — ordre positionnel (inclut les sous-items du dropdown "Experience")
   const translations = {
-      'en': ['About', 'Professional Experience', 'Academic Experience', 'Other'],
-      'fr': ['À propos', 'Expérience Professionnelle', 'Expérience Académique', 'Autre'],
-      'pl': ['O mnie', 'Doświadczenie Zawodowe', 'Doświadczenie Akademickie', 'Inne']
+      'en': ['About', 'Professional', 'ML & Data Engineering', 'Data Science', 'Academic', 'Other', 'Overview'],
+      'fr': ['À propos', 'Professionnel', 'ML & Data Ingénierie', 'Data Science', 'Académique', 'Autre', 'Compétences'],
+      'pl': ['O mnie', 'Zawodowe', 'ML i Inżynieria Danych', 'Data Science', 'Akademickie', 'Inne', 'Umiejętności']
   };
 
   (function() {
@@ -324,7 +371,9 @@ Angielski C1 (TOEIC)</p>
                           window.location.href.includes('.pl.') ? 'pl' : 'en');
 
       function translateNavbar() {
-          const navLinks = document.querySelectorAll('.navbar-nav:not(.ms-auto) .nav-link');
+          const navLinks = document.querySelectorAll(
+              '.navbar-nav:not(.ms-auto) .nav-link, .navbar-nav:not(.ms-auto) .dropdown-item'
+          );
           const currentFile = `index.${currentLang}.html`;
           let navIndex = 0;
 
@@ -384,22 +433,97 @@ Angielski C1 (TOEIC)</p>
       });
   });
 
-  // Surbrillance onglet actif
-  window.addEventListener('scroll', function() {
-      const sections = ['about', 'experience', 'education', 'other'];
-      let currentSection = 'about';
-      const scrollY = window.scrollY + 100;
-      sections.forEach(section => {
-          const el = document.querySelector('#' + section);
-          if (el && el.offsetTop <= scrollY) currentSection = section;
-      });
-      const navLinks = document.querySelectorAll('.navbar-nav .nav-link[href*="#"]');
-      navLinks.forEach(link => {
-          const href = link.getAttribute('href');
-          if (href && href.includes('#' + currentSection)) link.classList.add('active');
-          else link.classList.remove('active');
-      });
-  });
+  // Scroll-spy via IntersectionObserver — meilleur perf que scroll listener
+  (function () {
+      function init() {
+          const sectionIds = ['about', 'experience', 'education', 'other', 'overview'];
+          const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
+          const navLinks = document.querySelectorAll('.navbar-nav .nav-link[href*="#"]');
+          if (!sections.length || !navLinks.length) return;
+
+          function setActive(id) {
+              navLinks.forEach(link => {
+                  const href = link.getAttribute('href');
+                  const anchor = href && href.includes('#') ? href.split('#')[1] : null;
+                  if (anchor === id) link.classList.add('active');
+                  else link.classList.remove('active');
+              });
+          }
+
+          const observer = new IntersectionObserver((entries) => {
+              let best = null;
+              entries.forEach(e => {
+                  if (e.isIntersecting && (!best || e.intersectionRatio > best.intersectionRatio)) {
+                      best = e;
+                  }
+              });
+              if (best) setActive(best.target.id);
+          }, {
+              rootMargin: '-40% 0px -50% 0px',
+              threshold: [0, 0.25, 0.5, 0.75, 1]
+          });
+
+          sections.forEach(s => observer.observe(s));
+      }
+
+      if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', init);
+      } else {
+          init();
+      }
+  })();
+
+  // Click sur "Professionnel" (dropdown toggle) → scroll vers #experience
+  (function () {
+      function init() {
+          const toggle = document.querySelector('.navbar-nav .nav-item.dropdown > .nav-link.dropdown-toggle');
+          if (!toggle) return;
+          toggle.addEventListener('click', function (e) {
+              e.preventDefault();
+              const target = document.getElementById('experience');
+              if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          });
+      }
+      if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', init);
+      } else {
+          init();
+      }
+  })();
+
+  // Recherche des compétences dans la section Overview
+  (function () {
+      function norm(s) {
+          return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      }
+      function init() {
+          const input = document.querySelector('.skills-search');
+          if (!input) return;
+          const overview = input.closest('.overview') || document;
+          const chips = Array.from(overview.querySelectorAll('.skill-chip'));
+          // Chaque catégorie = section.level2 (Pandoc wrap via section-divs)
+          const categories = Array.from(overview.querySelectorAll('section.level2'));
+
+          function filter() {
+              const q = norm(input.value.trim());
+              chips.forEach(chip => {
+                  const match = !q || norm(chip.textContent).includes(q);
+                  chip.classList.toggle('is-hidden', !match);
+              });
+              categories.forEach(cat => {
+                  const anyVisible = Array.from(cat.querySelectorAll('.skill-chip'))
+                      .some(c => !c.classList.contains('is-hidden'));
+                  cat.classList.toggle('is-empty', !anyVisible);
+              });
+          }
+          input.addEventListener('input', filter);
+      }
+      if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', init);
+      } else {
+          init();
+      }
+  })();
 
   // Toggle thème clair/sombre
   (function () {
@@ -422,10 +546,13 @@ Angielski C1 (TOEIC)</p>
           btn.setAttribute('title', btn.getAttribute('aria-label'));
       }
       function applyTheme(theme) {
-          document.documentElement.setAttribute('data-theme', theme);
+          const root = document.documentElement;
+          root.classList.add('theme-transition');
+          root.setAttribute('data-theme', theme);
           try { localStorage.setItem('theme', theme); } catch (e) {}
           const btn = document.getElementById('theme-toggle');
           if (btn) renderBtn(btn, theme);
+          setTimeout(function () { root.classList.remove('theme-transition'); }, 350);
       }
       function injectToggle() {
           const nav = document.querySelector('.navbar-nav.ms-auto');
@@ -856,19 +983,6 @@ Angielski C1 (TOEIC)</p>
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">
-<p><span style="font-size:0.9em; color:#777;"> Conçu et développé avec Quarto par Vanessa Kenniche Sanocka </span></p>
-</div>
-    <div class="nav-footer-right">
-      &nbsp;
-    </div>
-  </div>
-</footer>
 
 
 

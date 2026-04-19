@@ -1,9 +1,9 @@
 <script>
-  // Traductions pour chaque langue - organisées par position
+  // Traductions de la navbar — ordre positionnel (inclut les sous-items du dropdown "Experience")
   const translations = {
-      'en': ['About', 'Professional Experience', 'Academic Experience', 'Other'],
-      'fr': ['À propos', 'Expérience Professionnelle', 'Expérience Académique', 'Autre'],
-      'pl': ['O mnie', 'Doświadczenie Zawodowe', 'Doświadczenie Akademickie', 'Inne']
+      'en': ['About', 'Professional', 'ML & Data Engineering', 'Data Science', 'Academic', 'Other', 'Overview'],
+      'fr': ['À propos', 'Professionnel', 'ML & Data Ingénierie', 'Data Science', 'Académique', 'Autre', 'Compétences'],
+      'pl': ['O mnie', 'Zawodowe', 'ML i Inżynieria Danych', 'Data Science', 'Akademickie', 'Inne', 'Umiejętności']
   };
 
   (function() {
@@ -12,7 +12,9 @@
                           window.location.href.includes('.pl.') ? 'pl' : 'en');
 
       function translateNavbar() {
-          const navLinks = document.querySelectorAll('.navbar-nav:not(.ms-auto) .nav-link');
+          const navLinks = document.querySelectorAll(
+              '.navbar-nav:not(.ms-auto) .nav-link, .navbar-nav:not(.ms-auto) .dropdown-item'
+          );
           const currentFile = `index.${currentLang}.html`;
           let navIndex = 0;
 
@@ -72,22 +74,97 @@
       });
   });
 
-  // Surbrillance onglet actif
-  window.addEventListener('scroll', function() {
-      const sections = ['about', 'experience', 'education', 'other'];
-      let currentSection = 'about';
-      const scrollY = window.scrollY + 100;
-      sections.forEach(section => {
-          const el = document.querySelector('#' + section);
-          if (el && el.offsetTop <= scrollY) currentSection = section;
-      });
-      const navLinks = document.querySelectorAll('.navbar-nav .nav-link[href*="#"]');
-      navLinks.forEach(link => {
-          const href = link.getAttribute('href');
-          if (href && href.includes('#' + currentSection)) link.classList.add('active');
-          else link.classList.remove('active');
-      });
-  });
+  // Scroll-spy via IntersectionObserver — meilleur perf que scroll listener
+  (function () {
+      function init() {
+          const sectionIds = ['about', 'experience', 'education', 'other', 'overview'];
+          const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
+          const navLinks = document.querySelectorAll('.navbar-nav .nav-link[href*="#"]');
+          if (!sections.length || !navLinks.length) return;
+
+          function setActive(id) {
+              navLinks.forEach(link => {
+                  const href = link.getAttribute('href');
+                  const anchor = href && href.includes('#') ? href.split('#')[1] : null;
+                  if (anchor === id) link.classList.add('active');
+                  else link.classList.remove('active');
+              });
+          }
+
+          const observer = new IntersectionObserver((entries) => {
+              let best = null;
+              entries.forEach(e => {
+                  if (e.isIntersecting && (!best || e.intersectionRatio > best.intersectionRatio)) {
+                      best = e;
+                  }
+              });
+              if (best) setActive(best.target.id);
+          }, {
+              rootMargin: '-40% 0px -50% 0px',
+              threshold: [0, 0.25, 0.5, 0.75, 1]
+          });
+
+          sections.forEach(s => observer.observe(s));
+      }
+
+      if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', init);
+      } else {
+          init();
+      }
+  })();
+
+  // Click sur "Professionnel" (dropdown toggle) → scroll vers #experience
+  (function () {
+      function init() {
+          const toggle = document.querySelector('.navbar-nav .nav-item.dropdown > .nav-link.dropdown-toggle');
+          if (!toggle) return;
+          toggle.addEventListener('click', function (e) {
+              e.preventDefault();
+              const target = document.getElementById('experience');
+              if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          });
+      }
+      if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', init);
+      } else {
+          init();
+      }
+  })();
+
+  // Recherche des compétences dans la section Overview
+  (function () {
+      function norm(s) {
+          return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      }
+      function init() {
+          const input = document.querySelector('.skills-search');
+          if (!input) return;
+          const overview = input.closest('.overview') || document;
+          const chips = Array.from(overview.querySelectorAll('.skill-chip'));
+          // Chaque catégorie = section.level2 (Pandoc wrap via section-divs)
+          const categories = Array.from(overview.querySelectorAll('section.level2'));
+
+          function filter() {
+              const q = norm(input.value.trim());
+              chips.forEach(chip => {
+                  const match = !q || norm(chip.textContent).includes(q);
+                  chip.classList.toggle('is-hidden', !match);
+              });
+              categories.forEach(cat => {
+                  const anyVisible = Array.from(cat.querySelectorAll('.skill-chip'))
+                      .some(c => !c.classList.contains('is-hidden'));
+                  cat.classList.toggle('is-empty', !anyVisible);
+              });
+          }
+          input.addEventListener('input', filter);
+      }
+      if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', init);
+      } else {
+          init();
+      }
+  })();
 
   // Toggle thème clair/sombre
   (function () {
@@ -110,10 +187,13 @@
           btn.setAttribute('title', btn.getAttribute('aria-label'));
       }
       function applyTheme(theme) {
-          document.documentElement.setAttribute('data-theme', theme);
+          const root = document.documentElement;
+          root.classList.add('theme-transition');
+          root.setAttribute('data-theme', theme);
           try { localStorage.setItem('theme', theme); } catch (e) {}
           const btn = document.getElementById('theme-toggle');
           if (btn) renderBtn(btn, theme);
+          setTimeout(function () { root.classList.remove('theme-transition'); }, 350);
       }
       function injectToggle() {
           const nav = document.querySelector('.navbar-nav.ms-auto');

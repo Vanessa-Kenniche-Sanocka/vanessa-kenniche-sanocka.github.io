@@ -9,9 +9,9 @@ title: "Vanessa Kenniche Sanocka — Data Scientist"
 ![](images/photo.jpg){width=100%}
 
 ### **Contact**  
-KENSAN.VAN@GMAIL.COM  
-+33 7 68 14 01 74  
-[LinkedIn](https://www.linkedin.com/in/vanessa-kenniche-sanocka/)  
+**KENSAN.VAN@GMAIL.COM**  
+**+33 7 68 14 01 74**  
+**[LinkedIn](https://www.linkedin.com/in/vanessa-kenniche-sanocka/)**  
 
 ### **Expertises**
 
@@ -34,11 +34,13 @@ Anglais C1 (TOEIC)
 
 ::: {.column .main-column width="70%"}
 
-# À propos {#about}
+# À propos de Vanessa Kenniche Sanocka {#about}
 
-**Vanessa Kenniche Sanocka**, Data Science Engineer\
-**Data scientist à la Cour des comptes depuis 2023**\
-**Diplômée du Cursus Master Ingénierie [(CMI)](https://reseau-figure.fr/les-cursus-master-en-ingenierie) Data Science for Social Sciences, Université Paris Nanterre**
+::: {.lead}
+Ingénieur en machine learning et science des données
+:::
+
+Diplôme d'ingénieur du cursus [CMI](https://reseau-figure.fr/les-cursus-master-en-ingenierie) à l'Université Paris Nanterre.
 
 Spécialisée en économie quantitative et analyse de politiques publiques. Expertise en conduite de projets de bout en bout : modélisation économétrique, traitement de données volumineuses et sensibles, transformation d'analyses complexes en recommandations accessibles aux parties prenantes. Expérience internationale et capacité à présenter devant des publics variés, de magistrats aux équipes techniques. Approche structurée orientée reproductibilité, transmission et impact décisionnel.
 
@@ -46,21 +48,33 @@ Spécialisée en économie quantitative et analyse de politiques publiques. Expe
 
 # Expérience Professionnelle {#experience}
 
-## Cour des comptes | Data Science Engineer | 2023 — Aujourd'hui
+## Cour des comptes depuis 2023
+
+### Machine Learning & Data Ingénieur {#experience-ml}
+
+*Rôle actuel — description à venir.*
+
+- Placeholder 1
+- Placeholder 2
+- Placeholder 3
+
+### Data Scientist {#experience-ds}
 
 ::: {.role-context}
 Intervention sur des projets d'évaluation de politiques publiques au sein de juridictions financières. Production d'analyses orientées décision en collaboration directe avec magistrats et parties prenantes institutionnelles. Maîtrise des standards de confidentialité et restitution claire dans des contextes formels.
 :::
 
-### ▸ Analyse géospatiale transfrontalière franco-suisse
-**Harmonisation de données SIG hétérogènes France-Suisse** pour identifier les discontinuités réglementaires transfrontalières. Recherche et exploitation de bases officielles (IGN, SwissTopo, SITG), couplage de nomenclatures et harmonisation d'échelles territoriales. Transformation d'analyses géospatiales complexes en visualisations interactives et recommandations de politique publique pour équipes institutionnelles.  
+#### Analyse et harmonisation géospatiale de données SIG hétérogènes à l'échelle transfrontalière franco-suisse, visant à identifier les discontinuités réglementaires entre les deux territoires.
+
+Recherche et exploitation de bases officielles (IGN, SwissTopo, SITG), couplage de nomenclatures et harmonisation d'échelles territoriales. Transformation d'analyses géospatiales complexes en visualisations interactives et recommandations de politique publique pour équipes institutionnelles.  
 <span class="tag">Python</span>
 <span class="tag">QGIS</span>
 <span class="tag">GeoPandas</span>
 <span class="tag">PlotLy</span>
 
-### ▸ Évaluation des politiques tarifaires des transports urbains
-**Modélisation économétrique avancée** sur données nationales (GART, CEREMA) combinant panel models, event studies et méthodes de sondage. Traitement de bases confidentielles d'usagers par échantillonnage stratifié, redressement par score de propension, calage sur marges et bootstrapping. Enrichissement par recherche complémentaire (base FILOSOFI) pour formuler des recommandations tarifaires avec restitution interactive via Shiny.  
+#### Évaluation des politiques tarifaires des transports urbains par modélisation économétrique avancée sur données nationales (GART, CEREMA) combinant panel models, event studies et méthodes de sondage.
+
+Traitement de bases confidentielles d'usagers par échantillonnage stratifié, redressement par score de propension, calage sur marges et bootstrapping. Enrichissement par recherche complémentaire (base FILOSOFI) pour formuler des recommandations tarifaires avec restitution interactive via Shiny.  
 <span class="tag">R</span>
 <span class="tag">Panel Data</span>
 <span class="tag">Event Study</span>
@@ -71,8 +85,9 @@ Intervention sur des projets d'évaluation de politiques publiques au sein de ju
 <span class="tag">Shiny</span>
 <span class="tag">Leaflet</span>
 
-### ▸ Pipeline NLP et RAG pour exploration documentaire
-**Intégration full-stack** pour l'exploration et interrogation sémantique des documents institutionnels. Architecture complète incluant preprocessing NLP (tokenisation, lemmatisation, NER), modèles d'embeddings (SBERT, Word2Vec), indexation ElasticSearch et interface web Next.js. Développement d'API FastAPI pour requêtes en temps réel et migration vers nouveau système d'archivage interne.  
+#### Pipeline NLP et RAG pour exploration documentaire : intégration full-stack d'interrogation sémantique des documents institutionnels.
+
+Architecture complète incluant preprocessing NLP (tokenisation, lemmatisation, NER), modèles d'embeddings (SBERT, Word2Vec), indexation ElasticSearch et interface web Next.js. Développement d'API FastAPI pour requêtes en temps réel et migration vers nouveau système d'archivage interne.  
 <span class="tag">Python</span>
 <span class="tag">spaCy</span>
 <span class="tag">SBERT</span>
@@ -83,8 +98,9 @@ Intervention sur des projets d'évaluation de politiques publiques au sein de ju
 <span class="tag">NLP</span>
 <span class="tag">Embeddings</span>
 
-### ▸ Modélisation prédictive sur registres judiciaires nationaux (CASD)
-**Algorithmes de machine learning** sur données longitudinales du Casier judiciaire national. Analyse de survie et scoring de risque pour trajectoires criminelles. Traitement intensif d'identifiants, constitution de panels temporels et modélisation de récidive pour aide à la décision publique en environnement sécurisé haute confidentialité.  
+#### Modélisation prédictive sur registres judiciaires nationaux (CASD) avec algorithmes de machine learning sur données longitudinales du Casier judiciaire national.
+
+Analyse de survie et scoring de risque pour trajectoires criminelles. Traitement intensif d'identifiants, constitution de panels temporels et modélisation de récidive pour aide à la décision publique en environnement sécurisé haute confidentialité.  
 <span class="tag">R</span>
 <span class="tag">Machine Learning</span>
 <span class="tag">Survival Analysis</span>
@@ -93,7 +109,7 @@ Intervention sur des projets d'évaluation de politiques publiques au sein de ju
 <span class="tag">CASD</span>
 <span class="tag">Longitudinal Data</span>
 
-### ▸ Analyse sur données fiscales et d'emploi (EEC, POTE)
+#### Analyse sur données fiscales et d'emploi (EEC, POTE)
 **Exploitation d'enquêtes emploi INSEE** et bases fiscales via CASD pour évaluation des réformes (retraites, loi PACTE). Modélisation statistique sur données administratives couplées, harmonisation de bases hétérogènes et appariement d'identifiants. Production d'indicateurs économiques et évaluation d'impact des politiques sociales.  
 <span class="tag">R</span>
 <span class="tag">Statistical Modeling</span>
@@ -103,9 +119,7 @@ Intervention sur des projets d'évaluation de politiques publiques au sein de ju
 <span class="tag">CASD</span>
 <span class="tag">Economic Indicators</span>
 
-## Projets transversaux et contributions institutionnelles
-
-### ▸ Développement de modules formation pour data scientists
+#### Développement de modules formation pour data scientists
 **Conception d'outils pédagogiques** : module de sondage statistique (stratification, pondération, calibration), tutoriel cartographie interactive (R/Python, Leaflet/Folium), template Quarto standardisé pour rapports reproductibles. Animation d'ateliers internes et documentation technique pour montée en compétences collective.  
 <span class="tag">R</span>
 <span class="tag">Python</span>
@@ -113,7 +127,7 @@ Intervention sur des projets d'évaluation de politiques publiques au sein de ju
 <span class="tag">Pedagogy</span>
 <span class="tag">Documentation</span>
 
-### ▸ Plateforme collaborative pour équipe data science
+#### Plateforme collaborative pour équipe data science
 **Architecture de partage de connaissances** : développement d'une plateforme interne de centralisation des ressources, peer reviews et sessions de formation. Mise en place de bonnes pratiques Git, standards de code et processus de validation collaborative.  
 <span class="tag">GitLab</span>
 <span class="tag">Collaboration</span>
@@ -127,7 +141,7 @@ Intervention sur des projets d'évaluation de politiques publiques au sein de ju
 Formation sélective et intensive structurée autour de projets pluriannuels. Enseignements renforcés en économétrie, data science et analyse de politiques publiques. Réalisation de deux mémoires de recherche sous encadrement de [Patrice Bertail](https://bertail.perso.math.cnrs.fr/), combinant modélisation avancée et valorisation scientifique. Approche projet avec autonomie dans l'identification de sources de données et mise en situation réelle.
 :::
 
-### ▸ Détection de fraude bancaire
+#### Détection de fraude bancaire
 **Modélisation supervisée sur données déséquilibrées**. Application de techniques SMOTE/B-SMOTE, validation croisée et scoring de risque financier. Comparaison de modèles (Random Forest, XGBoost, SVM) avec optimisation des métriques pour classes minoritaires.  
 <span class="tag">Python</span>
 <span class="tag">Scikit-learn</span>
@@ -135,7 +149,7 @@ Formation sélective et intensive structurée autour de projets pluriannuels. En
 <span class="tag">Cross-validation</span>
 <span class="tag">Financial Risk</span>
 
-### ▸ Détection de pricing algorithmique — avec laboratoire EconomiX
+#### Détection de pricing algorithmique — avec laboratoire EconomiX
 **Scraping haute fréquence vers datalake**, classification et estimation des ajustements de prix par modèles d'effets fixes. Tests de robustesse et détection de patterns de tarification automatisée sur données e-commerce.  
 <span class="tag">Python</span>
 <span class="tag">Web Scraping</span>
@@ -143,7 +157,7 @@ Formation sélective et intensive structurée autour de projets pluriannuels. En
 <span class="tag">Price Analytics</span>
 <span class="tag">Data Lake</span>
 
-### ▸ Benchmarking des déterminants d'innovation (Asie du Sud)
+#### Benchmarking des déterminants d'innovation (Asie du Sud)
 **Modélisation économétrique cross-country** (logit/Poisson) sur données d'enquête. Tests de robustesse par régularisation Lasso et analyse comparative des facteurs d'innovation (Inde, Bangladesh, Pakistan, Nepal).  
 <span class="tag">R</span>
 <span class="tag">Econometrics</span>
@@ -151,7 +165,7 @@ Formation sélective et intensive structurée autour de projets pluriannuels. En
 <span class="tag">Lasso Regularization</span>
 <span class="tag">Innovation Policy</span>
 
-### ▸ Network analysis des votes parlementaires
+#### Network analysis des votes parlementaires
 **Scraping de données gouvernementales** ouvertes, construction de matrices de distance Manhattan et clustering spring layout pour identifier les coalitions transpartisanes. Visualisation interactive des proximités politiques.  
 <span class="tag">Python</span>
 <span class="tag">NetworkX</span>
@@ -159,7 +173,7 @@ Formation sélective et intensive structurée autour de projets pluriannuels. En
 <span class="tag">Political Analysis</span>
 <span class="tag">Dash</span>
 
-### ▸ Pipeline Power BI démographique
+#### Pipeline Power BI démographique
 **Entrepôt en étoile MySQL**, requêtes à fenêtrage (moyennes mobiles) et tableau de bord territorial pour indicateurs de politique du logement. Architecture BI complète avec ETL via MageAI.  
 <span class="tag">SQL</span>
 <span class="tag">MySQL</span>
@@ -167,7 +181,7 @@ Formation sélective et intensive structurée autour de projets pluriannuels. En
 <span class="tag">Data Warehouse</span>
 <span class="tag">ETL</span>
 
-### ▸ Intelligence brevetaire PATSTAT
+#### Intelligence brevetaire PATSTAT
 **Cartographie concurrentielle** et positionnement stratégique sectoriel avec visualisations géospatiales. Analyse des familles de brevets, citations et recommandations de politique industrielle sur base officielle.  
 <span class="tag">Python</span>
 <span class="tag">SQL</span>
@@ -175,7 +189,7 @@ Formation sélective et intensive structurée autour de projets pluriannuels. En
 <span class="tag">Patent Analysis</span>
 <span class="tag">Geospatial Viz</span>
 
-### ▸ Data Lake Reddit & SteamDB
+#### Data Lake Reddit & SteamDB
 **Pipeline de collecte et analyse** : scraping de données massives, orchestration Airflow, ingestion temps réel dans datalake. Architecture Kafka/Spark avec stockage Parquet et monitoring Grafana.  
 <span class="tag">Python</span>
 <span class="tag">Airflow</span>
@@ -183,7 +197,7 @@ Formation sélective et intensive structurée autour de projets pluriannuels. En
 <span class="tag">Spark</span>
 <span class="tag">Data Lake</span>
 
-### ▸ IMDB — Graphes de plus court chemin
+#### IMDB — Graphes de plus court chemin
 **Construction de graphe biparti** acteurs-films, calcul de plus courts chemins avec NetworkX. Interface Dash pour requêtes interactives avec contraintes temporelles et visualisation de réseaux.  
 <span class="tag">Python</span>
 <span class="tag">NetworkX</span>
@@ -193,15 +207,86 @@ Formation sélective et intensive structurée autour de projets pluriannuels. En
 
 # Engagements et Contributions {#other}
 
-### ▸ Ambassadrice STEM — Programme "Filles et Maths"
+#### Ambassadrice STEM — Programme "Filles et Maths"
 **Sensibilisation de lycéennes** aux carrières scientifiques dans le cadre du plan national de promotion des filières STEM. Intervention auprès de l'Université Paris Nanterre pour déconstruction des stéréotypes de genre en mathématiques et sciences.
 
-### ▸ Contributions open source et formation
+#### Contributions open source et formation
 **Développement de ressources pédagogiques** : templates Quarto, modules R pour méthodes de sondage, tutoriels de cartographie interactive. Partage de bonnes pratiques en reproductibilité et documentation technique.
 
-### ▸ Centres d'intérêt
+#### Centres d'intérêt
 Arts numériques, design graphique, modélisation 3D, VTT, gymnastique, histoire contemporaine, numismatique
 
 :::
 
 ::::
+
+::: {.overview}
+# Compétences {#overview}
+
+<input type="search" class="skills-search" placeholder="Rechercher une compétence…">
+
+## Langages
+<span class="skill-chip">Python</span>
+<span class="skill-chip">R</span>
+<span class="skill-chip">SQL</span>
+<span class="skill-chip">JavaScript</span>
+<span class="skill-chip">TypeScript</span>
+<span class="skill-chip">Bash</span>
+<span class="skill-chip">HTML/CSS</span>
+<span class="skill-chip">Scala</span>
+
+## Frameworks & bibliothèques
+<span class="skill-chip">PyTorch</span>
+<span class="skill-chip">TensorFlow</span>
+<span class="skill-chip">Scikit-learn</span>
+<span class="skill-chip">Pandas</span>
+<span class="skill-chip">NumPy</span>
+<span class="skill-chip">FastAPI</span>
+<span class="skill-chip">Next.js</span>
+<span class="skill-chip">React</span>
+<span class="skill-chip">Shiny</span>
+<span class="skill-chip">Dash</span>
+<span class="skill-chip">spaCy</span>
+<span class="skill-chip">NetworkX</span>
+<span class="skill-chip">XGBoost</span>
+<span class="skill-chip">Transformers</span>
+
+## Bases de données
+<span class="skill-chip">PostgreSQL</span>
+<span class="skill-chip">MySQL</span>
+<span class="skill-chip">ElasticSearch</span>
+<span class="skill-chip">MongoDB</span>
+<span class="skill-chip">SQLite</span>
+<span class="skill-chip">Redis</span>
+
+## Cloud / Data / DevOps
+<span class="skill-chip">Docker</span>
+<span class="skill-chip">Git</span>
+<span class="skill-chip">GitLab</span>
+<span class="skill-chip">Airflow</span>
+<span class="skill-chip">Spark</span>
+<span class="skill-chip">Kafka</span>
+<span class="skill-chip">Quarto</span>
+<span class="skill-chip">Power BI</span>
+<span class="skill-chip">QGIS</span>
+<span class="skill-chip">MageAI</span>
+<span class="skill-chip">Grafana</span>
+<span class="skill-chip">Parquet</span>
+
+## Méthodes & autres
+<span class="skill-chip">Econometrics</span>
+<span class="skill-chip">Machine Learning</span>
+<span class="skill-chip">Deep Learning</span>
+<span class="skill-chip">NLP</span>
+<span class="skill-chip">RAG</span>
+<span class="skill-chip">Causal Inference</span>
+<span class="skill-chip">Survival Analysis</span>
+<span class="skill-chip">Panel Data</span>
+<span class="skill-chip">Event Study</span>
+<span class="skill-chip">Bootstrap</span>
+<span class="skill-chip">Cross-validation</span>
+<span class="skill-chip">SMOTE</span>
+<span class="skill-chip">Propensity Score</span>
+<span class="skill-chip">Survey Methods</span>
+<span class="skill-chip">Graph Theory</span>
+:::
