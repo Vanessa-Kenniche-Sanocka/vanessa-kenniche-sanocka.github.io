@@ -1,6 +1,6 @@
 ---
 lang: pl
-title: "Vanessa Kenniche Sanocka — Data Scientist"
+title: "Vanessa Kenniche Sanocka - Data Scientist"
 ---
 
 :::: {.columns}
@@ -15,15 +15,15 @@ title: "Vanessa Kenniche Sanocka — Data Scientist"
 
 ### **Specjalizacje**
 
-Zaawansowana ekonometria, analiza przyczynowości, uczenie maszynowe, NLP, analityka geospatial, inżynieria danych, wizualizacja interaktywna, ewaluacja polityk publicznych, dane poufne
+Inżynieria danych od początku do końca, indeksowanie RAG i wyszukiwanie semantyczne, industrializacja MLOps, zaawansowane modelowanie ekonometryczne i analiza przyczynowości, NLP, analityka geospatial, interaktywna wizualizacja i osadzona BI, dane poufne, suwerenne środowiska air-gapped
 
 ### **Języki programowania**
 
-Python, R, SQL, JavaScript, HTML/CSS, Bash
+Python, SQL, R, JavaScript, TypeScript, HTML/CSS, Bash
 
 ### **Narzędzia**
 
-Spark, Airflow, ElasticSearch, PyTorch, TensorFlow, Quarto, Power BI, Shiny, Git/GitLab, Docker, QGIS, CASD
+PostgreSQL, Elasticsearch, Apache Airflow, Apache Superset, Apache Spark, MLflow, LangChain, FastAPI, Streamlit, Next.js, Pandas, Scikit-learn, PyTorch, TensorFlow, Docker, Linux, Git/GitLab CI, Quarto, Power BI, Shiny, QGIS, CASD
 
 ### **Języki** 
 Francuski natywny  
@@ -42,13 +42,79 @@ Inżynier uczenia maszynowego i nauki o danych
 
 Dyplom inżynierski programu [CMI](https://reseau-figure.fr/les-cursus-master-en-ingenierie) na Uniwersytecie Paris Nanterre.
 
-Specjalizacja w ekonomii ilościowej i analizie polityk publicznych. Doświadczenie w kierowaniu projektami od początku do końca: modelowanie ekonometryczne, przetwarzanie dużych i wrażliwych zbiorów danych, przekształcanie złożonych analiz w dostępne rekomendacje dla interesariuszy. Doświadczenie międzynarodowe i umiejętność prezentacji przed różnorodnymi audytoriami, od sędziów po zespoły techniczne. Ustrukturyzowane podejście zorientowane na reprodukowalność, transfer wiedzy i wpływ na decyzje.
+Specjalizacja w ekonomii ilościowej i analizie polityk publicznych, uzupełniona o ekspertyzę w inżynierii danych i uczenia maszynowego, ukształtowaną w bezpośrednim kontakcie z zespołami kontrolnymi i data scientists. Doświadczenie w kierowaniu projektami od początku do końca: modelowanie ekonometryczne, przetwarzanie dużych i wrażliwych zbiorów danych, projektowanie i industrializacja pipeline'ów data i AI (RAG, ETL, MLOps, skonteneryzowane wdrożenia w środowiskach suwerennych), przekształcanie złożonych analiz w dostępne rekomendacje dla interesariuszy. Doświadczenie międzynarodowe i umiejętność prezentacji przed różnorodnymi audytoriami, od sędziów po zespoły techniczne. Ustrukturyzowane podejście zorientowane na reprodukowalność, transfer wiedzy i wpływ na decyzje, wspierane przez hybrydowy profil data scientist i inżyniera, który zakorzenia projektowanie narzędzi w realnych potrzebach biznesowych.
 
-<a href="files/CV_Vanessa_KENNICHE_SANOCKA_en.pdf" class="btn btn-primary btn-sm" download>Pobierz CV Vanessa KENNICHE SANOCKA</a>
+<a href="files/CV_Vanessa_KENNICHE_SANOCKA.pdf" class="btn btn-primary btn-sm" download>Pobierz CV Vanessa KENNICHE SANOCKA</a>
 
 # Doświadczenie zawodowe {#experience}
 
-## Francuska Izba Obrachunkowa | Inżynier Data Science | 2023 — Obecnie
+## Francuska Izba Obrachunkowa | Od 2023
+
+### Inżynier Machine Learning i Danych {#experience-ml}
+
+::: {.role-context}
+Obecne stanowisko w Departamencie Cyfryzacji i Danych. Misja: wyposażyć Izbę w produkcyjne narzędzia data i AI (silniki wyszukiwania semantycznego, refonty starszych ETL, agentów LLM, platformy analityczne) wspierające pracę zespołów kontrolnych, sędziów i data scientists. Profil hybrydowy łączący doświadczenie biznesowe (zdobyte po stronie kontroli i data science) z ekspertyzą inżynieryjną od początku do końca, w środowisku suwerennym i air-gapped.
+:::
+
+#### PRISME : silnik wyszukiwania semantycznego nad publicznym korpusem Francuskiej Izby Obrachunkowej, do dyspozycji zespołów kontrolnych, sędziów i ekspertów merytorycznych
+
+Pełny pipeline RAG nad ~35 000 publikacji Izby (~2 mln zaindeksowanych paragrafów), od ekstrakcji spisów treści po generowanie źródłowanych odpowiedzi w języku naturalnym. Łańcuch czternastu modułowych etapów: dwuprzebiegowy semantyczny *chunking* łączący ekstrakcję spisu treści przez LLM i *fuzzy split* po odcisku strefy spisu treści (oryginalny pomysł obchodzący klasyczne pułapki indeksowania długich PDF), wzbogacenie kontekstowe *breadcrumb* inspirowane Anthropic Contextual Retrieval, podwójne indeksowanie w Elasticsearch (BM25 tekstowy + KNN HNSW wektorowy nad embeddings Qwen3-8B), hybrydowy *retrieval* przez RRF, dywersyfikacja MMR, *reranking* cross-encoder Qwen3, generacja Mistral z progiem odmowy skalibrowanym przeciw halucynacjom. Ewaluacja przez ręczny *gold standard* i RAGAS, *ablation testing* dla każdego etapu. Interfejs Next.js / FastAPI, wielousługowy deployment Docker w środowisku suwerennym air-gapped (registry Nexus, *justfile* multi-cel, dual-VM SSH, *buildy* offline, *feature flags* w produkcji). Artykuł naukowy w formacie konferencji ACL/IEEE w trakcie redakcji nad wkładem metodologicznym.
+<span class="tag">Python</span>
+<span class="tag">FastAPI</span>
+<span class="tag">Next.js</span>
+<span class="tag">ElasticSearch</span>
+<span class="tag">RAG</span>
+<span class="tag">Qwen3</span>
+<span class="tag">Mistral</span>
+<span class="tag">Docker</span>
+<span class="tag">Nexus</span>
+<span class="tag">Air-gapped</span>
+<span class="tag">MLOps</span>
+<span class="tag">LaTeX</span>
+
+#### ANAPAYE : refonta narzędzia do analizy płac publicznych terytorialnych, używanego przez izby regionalne i terytorialne w trakcie kontroli
+
+Migracja odziedziczonego pipeline ETL Talend do nowoczesnego łańcucha Python dla przetwarzania plików płacowych w formatach XHL / Hélios / PES v2. Modułowa architektura rozdzielająca aplikację, pipeline i warstwę danych, z parsowaniem XML *streaming* oszczędnym pamięciowo i walidacją Pydantic. Wieloschematyczne przechowywanie PostgreSQL kierowane przez SQLModel z jawnie zarządzanymi migracjami Alembic. Wielostronicowa aplikacja Streamlit dla zespołów instrukcyjnych, z osadzonymi dashboardami Apache Superset przez SDK i dynamicznymi klauzulami RLS. Moduł nadzorowanego *machine learning* do detekcji anomalii na niezrównoważonych danych HR, w trakcie industrializacji pod MLflow. Wielousługowa konteneryzacja Docker, wewnętrzny registry Nexus i orkiestracja *justfile* dla wdrożenia air-gapped, z zaawansowanym asyncio na ciężkich pipeline'ach (semafory, *retry / backoff*, wznowienie *checkpoint*).
+<span class="tag">Python</span>
+<span class="tag">Streamlit</span>
+<span class="tag">Apache Superset</span>
+<span class="tag">PostgreSQL</span>
+<span class="tag">SQLModel</span>
+<span class="tag">Alembic</span>
+<span class="tag">MLflow</span>
+<span class="tag">Docker</span>
+<span class="tag">ETL</span>
+<span class="tag">Machine Learning</span>
+<span class="tag">asyncio</span>
+
+#### Wikam : graf wiedzy udostępniony agentowi AI przez Model Context Protocol, alternatywa dla klasycznego RAG dla strukturalnej pamięci instytucjonalnej Izby
+
+Projekt serwera MCP opakowującego wewnętrzne wiki tak, by agent LLM mógł nawigować po proceduralnej pamięci instytucji (organizacja kontroli, przebieg instrukcji, role sędziego / weryfikatora / kontr-sprawozdawcy) zamiast otrzymywać surowy markdown. Model uzyskuje dostęp do narzędzi wyszukiwania po tytule, pobierania strony, przejścia hierarchicznego i sąsiedztwa, które wywołuje na żądanie. Podejście trafne, gdy treść jest już dobrze rozdziałowana, a klasyczne dzielenie RAG wprowadziłoby szum. Sekwencjonowana strategia adopcji: graf NetworkX jako POC, podłączenie infrastruktury embeddings PRISME dla hybrydowego RAG, pełen GraphRAG z ekstrakcją encji rozważany jedynie w ostateczności.
+<span class="tag">Python</span>
+<span class="tag">MCP</span>
+<span class="tag">NetworkX</span>
+<span class="tag">BookStack</span>
+<span class="tag">LLM Agent</span>
+<span class="tag">Knowledge Graph</span>
+
+#### Strukturalizacja dziesięciu lat rekomendacji Izby Obrachunkowej w bazę interaktywną : około 75 000 rekomendacji wyekstrahowanych z 35 600 raportów (2015-2025)
+
+Asynchroniczny pipeline LLM identyfikujący i strukturyzujący sekcje „rekomendacje" raportów, nigdy wcześniej nie ekstrahowane systematycznie. Bezpośrednia detekcja LLM na pierwszych lub ostatnich znakach dokumentu w zależności od typowego umiejscowienia rekomendacji, poprzedzona heurystyczną fazą *scoring* (regex numeracji, detekcja podejrzanych przerw, mechanizm drugiej szansy). Asynchroniczny pipeline Mistral z *exponential backoff*, pauzą na seriach błędów, wznowieniem z *checkpoint* JSONL. Dedykowane indeksowanie Elasticsearch z *mapping nested* zachowującym metadane, embeddings i adresata, eksporty CSV / XLSX dla zespołów kontrolnych.
+<span class="tag">Python</span>
+<span class="tag">Mistral</span>
+<span class="tag">asyncio</span>
+<span class="tag">ElasticSearch</span>
+<span class="tag">LLM Pipeline</span>
+
+#### Ciągłe wsparcie zespołów kontrolnych i merytorycznych, równolegle do projektów inżynieryjnych
+
+Utrzymywanie aktywności analitycznej i doradczej w ciągłości z kontrolami prowadzonymi wcześniej jako data scientist. Wsparcie data scientists w zagadnieniach modelowania, zespołów instrukcyjnych w pytaniach metodologicznych (projektowanie i analiza ankiet Sphinx, dobór wskaźników, interpretacja wyników ekonometrycznych), oraz zespołu dokumentacyjnego przy migracji do nowego wewnętrznego systemu archiwizacji (refonta metadanych całego korpusu Izby). Ta podwójna postawa (inżynieria i analiza) zakotwicza projekty data w realnych potrzebach zespołów, które z nich korzystają.
+<span class="tag">R</span>
+<span class="tag">Ekonometria</span>
+<span class="tag">Sphinx</span>
+<span class="tag">Metadane</span>
+
+### Data Scientist {#experience-ds}
 
 ::: {.role-context}
 Praca przy projektach ewaluacji polityk publicznych w ramach jurysdykcji finansowych. Produkcja analiz zorientowanych na decyzje we współpracy bezpośredniej z sędziami i interesariuszami instytucjonalnymi. Znajomość standardów poufności i jasna komunikacja w kontekstach formalnych.
@@ -127,7 +193,7 @@ Analiza przeżycia i scoring ryzyka dla trajektorii przestępczych. Intensywne p
 
 # Doświadczenie akademickie {#education}
 
-## Program Magisterski Inżynierski Data Science for Social Sciences | Uniwersytet Paris Nanterre | 2020 — 2025
+## Program Magisterski Inżynierski Data Science for Social Sciences | Uniwersytet Paris Nanterre | 2020-2025
 
 ::: {.role-context}
 Selektywny i intensywny program strukturalny wokół projektów wieloletnich. Wzmocnione kursy w ekonometrii, data science i analizie polityk publicznych. Ukończenie dwóch prac badawczych pod nadzorem [Patrice Bertail](https://bertail.perso.math.cnrs.fr/), łączących zaawansowane modelowanie i wartościowanie naukowe. Podejście projektowe z autonomią w identyfikacji źródeł danych i zastosowaniu w rzeczywistości.
@@ -141,7 +207,7 @@ Selektywny i intensywny program strukturalny wokół projektów wieloletnich. Wz
 <span class="tag">Cross-validation</span>
 <span class="tag">Financial Risk</span>
 
-#### Wykrywanie pricing algorithmiczny — z laboratorium EconomiX
+#### Wykrywanie pricing algorithmiczny : z laboratorium EconomiX
 **Scraping wysokiej częstotliwości do data lake**, klasyfikacja i estymacja dostosowań cen poprzez modele fixed-effects. Testy robustności i wykrywanie wzorców automatycznej taryfikacji na danych e-commerce.  
 <span class="tag">Python</span>
 <span class="tag">Web Scraping</span>
@@ -189,7 +255,7 @@ Selektywny i intensywny program strukturalny wokół projektów wieloletnich. Wz
 <span class="tag">Spark</span>
 <span class="tag">Data Lake</span>
 
-#### IMDB — Grafy najkrótszej ścieżki
+#### IMDB : Grafy najkrótszej ścieżki
 **Konstrukcja grafu bipartite** aktorzy-filmy, obliczanie najkrótszych ścieżek z NetworkX. Interfejs Dash dla interaktywnych zapytań z ograniczeniami czasowymi i wizualizacją sieci.  
 <span class="tag">Python</span>
 <span class="tag">NetworkX</span>
@@ -199,7 +265,30 @@ Selektywny i intensywny program strukturalny wokół projektów wieloletnich. Wz
 
 # Zaangażowania i wkład {#other}
 
-#### Ambasador STEM — Program "Dziewczyny i Matematyka"
+#### Osobisty projekt rekonstrukcji kartograficznej
+Własny tile server w Pythonie (PIL + numpy + shapely) z wielorozdzielczościowym LOD (poziomy 1 / 2 / 4 / 8 / HD) i pre-generowanymi piramidami obrazów (100k+ kafelków) dla płynnego ekstremalnego zoomu. Pełny stos Svelte + Supabase + MapLibre GL + wysokowydajne overlays deck.gl (hover, klik, sprite'y, animacje), AVIF + Cloudflare R2.
+<span class="tag">Svelte</span>
+<span class="tag">MapLibre GL</span>
+<span class="tag">deck.gl</span>
+<span class="tag">Supabase</span>
+<span class="tag">Cloudflare R2</span>
+<span class="tag">Tile Server</span>
+<span class="tag">PIL</span>
+
+#### Udział w projekcie mapowania pokrycia Street View
+Porównawcze mapowanie pokrycia różnych dostawców map (Google, Apple, ...), z komponentem machine learning do rozpoznawania ścieżek i dróg na rastrowych kafelkach obrazowych.
+<span class="tag">Kartografia</span>
+<span class="tag">Computer Vision</span>
+<span class="tag">Machine Learning</span>
+<span class="tag">Open Data</span>
+
+#### Obserwacja techniczna AI i infrastruktury
+Regularne śledzenie ewolucji generatywnej AI: architektury modeli, kwantyzacja niskiej precyzji, wybór infrastruktury GPU/TPU, metody retrieval.
+<span class="tag">AI Infrastructure</span>
+<span class="tag">Quantization</span>
+<span class="tag">LLM</span>
+
+#### Ambasador STEM, Program "Dziewczyny i Matematyka"
 **Sensibilizacja uczennic liceum** na kariery naukowe w ramach narodowego planu promocji kierunków STEM. Interwencja na Uniwersytecie Paris Nanterre dla dekonstrukcji stereotypów płciowych w matematyce i naukach.
 
 #### Wkład open source i szkolenia
@@ -225,7 +314,8 @@ Sztuka cyfrowa, projektowanie graficzne, modelowanie 3D, kolarstwo górskie, gim
 <span class="skill-chip" data-aliases="TS">TypeScript</span>
 <span class="skill-chip">Bash</span>
 <span class="skill-chip">HTML/CSS</span>
-<span class="skill-chip">Scala</span>
+<span class="skill-chip">LaTeX</span>
+<span class="skill-chip">YAML</span>
 
 ## Frameworki i biblioteki
 <span class="skill-chip">PyTorch</span>
@@ -233,30 +323,54 @@ Sztuka cyfrowa, projektowanie graficzne, modelowanie 3D, kolarstwo górskie, gim
 <span class="skill-chip" data-aliases="sklearn">Scikit-learn</span>
 <span class="skill-chip">Pandas</span>
 <span class="skill-chip">NumPy</span>
-<span class="skill-chip">FastAPI</span>
-<span class="skill-chip">Next.js</span>
-<span class="skill-chip">React</span>
-<span class="skill-chip">Shiny</span>
-<span class="skill-chip">Dash</span>
-<span class="skill-chip">spaCy</span>
-<span class="skill-chip">NetworkX</span>
 <span class="skill-chip">XGBoost</span>
 <span class="skill-chip">Transformers</span>
+<span class="skill-chip">spaCy</span>
+<span class="skill-chip">NetworkX</span>
+<span class="skill-chip">FastAPI</span>
+<span class="skill-chip">Streamlit</span>
+<span class="skill-chip">Next.js</span>
+<span class="skill-chip">React</span>
+<span class="skill-chip">Svelte</span>
+<span class="skill-chip">Tailwind CSS</span>
+<span class="skill-chip">Shiny</span>
+<span class="skill-chip">Dash</span>
+<span class="skill-chip">MLflow</span>
+<span class="skill-chip">LangChain</span>
+<span class="skill-chip">SQLModel</span>
+<span class="skill-chip">SQLAlchemy</span>
+<span class="skill-chip">Pydantic</span>
+<span class="skill-chip">Alembic</span>
+<span class="skill-chip">GeoPandas</span>
+<span class="skill-chip">Leaflet</span>
+<span class="skill-chip">MapLibre GL</span>
+<span class="skill-chip">deck.gl</span>
 
-## Bazy danych
+## Bazy danych i wyszukiwarki
 <span class="skill-chip" data-aliases="postgres">PostgreSQL</span>
 <span class="skill-chip">MySQL</span>
-<span class="skill-chip" data-aliases="elastic, ES">ElasticSearch</span>
+<span class="skill-chip" data-aliases="elastic, ES">Elasticsearch</span>
+<span class="skill-chip">OpenSearch</span>
 <span class="skill-chip">MongoDB</span>
 <span class="skill-chip">SQLite</span>
+<span class="skill-chip">DuckDB</span>
 <span class="skill-chip">Redis</span>
+<span class="skill-chip">Supabase</span>
 
-## Cloud / Data / DevOps
+## Cloud, Data, DevOps i infrastruktura
 <span class="skill-chip">Docker</span>
+<span class="skill-chip">Docker Compose</span>
+<span class="skill-chip">Kubernetes</span>
+<span class="skill-chip">Linux</span>
+<span class="skill-chip">WSL2</span>
 <span class="skill-chip">Git</span>
 <span class="skill-chip">GitLab</span>
-<span class="skill-chip">Airflow</span>
-<span class="skill-chip">Spark</span>
+<span class="skill-chip">GitLab CI</span>
+<span class="skill-chip">Nexus</span>
+<span class="skill-chip">justfile</span>
+<span class="skill-chip">Apache Airflow</span>
+<span class="skill-chip">Apache Spark</span>
+<span class="skill-chip">Apache Superset</span>
 <span class="skill-chip">Kafka</span>
 <span class="skill-chip">Quarto</span>
 <span class="skill-chip">Power BI</span>
@@ -264,21 +378,66 @@ Sztuka cyfrowa, projektowanie graficzne, modelowanie 3D, kolarstwo górskie, gim
 <span class="skill-chip">MageAI</span>
 <span class="skill-chip">Grafana</span>
 <span class="skill-chip">Parquet</span>
+<span class="skill-chip">Cloudflare R2</span>
+<span class="skill-chip">Vercel</span>
+<span class="skill-chip">asyncio</span>
+<span class="skill-chip" data-aliases="air gapped">Air-gapped</span>
+<span class="skill-chip">MLOps</span>
 
-## Metody i inne
+## Metody i techniki
 <span class="skill-chip" data-aliases="économétrie, ekonometria">Econometrics</span>
 <span class="skill-chip" data-aliases="ML, apprentissage automatique, uczenie maszynowe">Machine Learning</span>
 <span class="skill-chip" data-aliases="DL, apprentissage profond, uczenie głębokie">Deep Learning</span>
 <span class="skill-chip" data-aliases="traitement langage naturel, TLN, przetwarzanie języka naturalnego">NLP</span>
 <span class="skill-chip" data-aliases="retrieval augmented generation">RAG</span>
+<span class="skill-chip">Hybrid Search</span>
+<span class="skill-chip">MMR</span>
+<span class="skill-chip">RRF</span>
+<span class="skill-chip">Reranking</span>
+<span class="skill-chip">HNSW</span>
+<span class="skill-chip">Embeddings</span>
+<span class="skill-chip">RAGAS</span>
+<span class="skill-chip" data-aliases="model context protocol">MCP</span>
+<span class="skill-chip">Knowledge Graph</span>
+<span class="skill-chip">GraphRAG</span>
 <span class="skill-chip" data-aliases="inférence causale, wnioskowanie przyczynowe">Causal Inference</span>
 <span class="skill-chip" data-aliases="analyse de survie, analiza przeżycia">Survival Analysis</span>
 <span class="skill-chip" data-aliases="données de panel, dane panelowe">Panel Data</span>
 <span class="skill-chip" data-aliases="étude d'événement, badanie zdarzeń">Event Study</span>
+<span class="skill-chip">Staggered Adoption</span>
+<span class="skill-chip">ATT(g,t)</span>
 <span class="skill-chip" data-aliases="rééchantillonnage">Bootstrap</span>
 <span class="skill-chip" data-aliases="validation croisée, walidacja krzyżowa">Cross-validation</span>
 <span class="skill-chip" data-aliases="oversampling, suréchantillonnage">SMOTE</span>
 <span class="skill-chip" data-aliases="score de propension, wynik skłonności">Propensity Score</span>
 <span class="skill-chip" data-aliases="méthodes de sondage, metody badawcze">Survey Methods</span>
 <span class="skill-chip" data-aliases="théorie des graphes, teoria grafów">Graph Theory</span>
+<span class="skill-chip" data-aliases="appariement flou">Fuzzy Matching</span>
+<span class="skill-chip">MinHash</span>
+<span class="skill-chip" data-aliases="détection d'anomalies">Anomaly Detection</span>
+
+## Wyspecjalizowane źródła danych
+<span class="skill-chip">FILOSOFI</span>
+<span class="skill-chip">ERFS</span>
+<span class="skill-chip">FELIN</span>
+<span class="skill-chip">POTE</span>
+<span class="skill-chip">EEC</span>
+<span class="skill-chip">GART</span>
+<span class="skill-chip">CEREMA</span>
+<span class="skill-chip">PATSTAT</span>
+<span class="skill-chip">COVADIS</span>
+<span class="skill-chip">SDAGE</span>
+<span class="skill-chip">ADMIN EXPRESS</span>
+<span class="skill-chip">IGN</span>
+<span class="skill-chip">SwissTopo</span>
+<span class="skill-chip">SwissBoundaries3D</span>
+<span class="skill-chip">SITG</span>
+<span class="skill-chip">Hélios</span>
+<span class="skill-chip">XHL</span>
+<span class="skill-chip">PES v2</span>
+<span class="skill-chip">CASD</span>
+<span class="skill-chip" data-aliases="casier judiciaire">Casier Judiciaire National</span>
+<span class="skill-chip">INSEE</span>
+<span class="skill-chip">OpenStreetMap</span>
+<span class="skill-chip">data.gouv.fr</span>
 :::
